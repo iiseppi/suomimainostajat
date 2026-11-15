@@ -83,7 +83,6 @@ blobs.officehome.msocdn.com
 browser.events.data.microsoft.com
 browser.events.data.msn.com
 browser.pipe.aria.microsoft.com
-c-0001.dc-msedge.net
 c.bing.com
 c.msn.com
 c1.microsoft.com
@@ -169,7 +168,6 @@ img.stb.s-msn.com
 inference.location.live.net
 insideruser.microsoft.com
 insideruser.trafficmanager.net
-ipv4.login.live.com
 k-ring.msedge.net
 kiwi.blob.core.windows.net
 kmwatson.events.data.microsoft.com
@@ -194,7 +192,6 @@ msagfx.live.com
 mscrl.microsoft.com
 msedge.api.cdp.microsoft.com
 msedge.b.tlu.dl.delivery.mp.microsoft.com
-msedge.net
 msgapi.teams.live.com
 msportal.blob.core.windows.net
 mucp.api.account.microsoft.com
@@ -420,8 +417,6 @@ wdcpalt.microsoft.com
 weus2watcab01.blob.core.windows.net
 weus2watcab02.blob.core.windows.net
 win10-trt.msedge.net
-win10.ipv6.microsoft.com
-win1710.ipv6.microsoft.com
 windows.msn.com
 windows.policies.live.net
 wns2-db5p.wns.windows.com
@@ -429,7 +424,6 @@ wns2-par02p.wns.windows.com
 wpcdn.blob.core.windows.net
 wscont.apps.microsoft.com.edgesuite.net
 www.download.windowsupdate.com
-www.msedge.net
 www.msftconnecttest.com
 www.msftncsi.com
 www.telecommandsvc.microsoft.com
