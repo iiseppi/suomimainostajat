@@ -43,7 +43,7 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
 3. Source: **Dynamic**, ja URL yllä olevasta luettelosta
 4. Päivitysväli: **24 h**
 5. Tee palomuurisääntö, joka estää liikenteen listaan:
-   **Settings → Policy Table → Create New Policy**, Action **Block**, Source Zone
+   **Settings → Policy Table → Create New Policy**, Action **Reject**, Source Zone
    **Internal**, Destination Zone **External** ja kohteeksi lista. Network 10:ssä
    polku on Settings → Policy Engine → Policy Table.
 
@@ -226,7 +226,7 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
 3. Source: **Dynamic**, with a URL from the list above
 4. Refresh interval: **24 h**
 5. Create a firewall policy that blocks traffic to the list:
-   **Settings → Policy Table → Create New Policy**, Action **Block**, Source Zone
+   **Settings → Policy Table → Create New Policy**, Action **Reject**, Source Zone
    **Internal**, Destination Zone **External**, with the list as the destination.
    In Network 10 the path is Settings → Policy Engine → Policy Table.
 
