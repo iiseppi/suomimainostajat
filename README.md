@@ -157,6 +157,27 @@ alainen, ja `mainokset.txt` sekä `suomi_mainokset.txt` sisältävät dataa, jot
 käyttää vain ei-kaupallisesti. Lähteiden lisenssit ja tarkemmat tiedot ovat
 kansiossa [`LICENSES/`](LICENSES/README.md).
 
+## Tietosuoja
+
+Repo ei kerää tietoja listojen käyttäjistä.
+
+* Listat ovat pelkkää tekstiä: yksi domain tai IP-osoite per rivi. Niissä ei ole
+  skriptejä, evästeitä eikä mitään muuta, mikä lähettäisi tietoja minnekään.
+* Listat rakennetaan GitHub Actionsissa. Generaattori hakee lähdelistat, kysyy
+  julkisilta nimipalvelimilta (Cloudflare, Google, Quad9) ja testaa listojen
+  palvelimia HTTPS:llä, HTTP:llä ja pingillä. Se ei ota yhteyttä käyttäjien
+  verkkoihin eikä laitteisiin.
+* README-tiedostoissa ei ole kuvia eikä seurantapikseleitä.
+* Kun UniFi hakee listan, pyyntö menee GitHubille (`raw.githubusercontent.com`).
+  GitHub näkee verkkosi julkisen IP-osoitteen ja pyynnön ajan kuten minkä tahansa
+  web-pyynnön ja käsittelee niitä
+  [oman tietosuojaselosteensa](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
+  mukaan.
+* Repon ylläpitäjä näkee GitHubin Traffic-tilastoista vain koostelukuja repon
+  sivujen katseluista ja kloonauksista. Niistä ei näe, kuka listoja käyttää.
+* Jos et halua, että GitHub näkee verkkosi osoitteen, jaa listat omalta
+  web-palvelimeltasi ja anna UniFille sen osoite.
+
 ---
 
 # suomimainostajat (in English)
@@ -317,3 +338,24 @@ Each list follows the licenses of its sources. `laitteet.txt` is under GPL-3.0,
 and `mainokset.txt` and `suomi_mainokset.txt` contain data that may only be used
 non-commercially. The source licenses and details (in Finnish) are in
 [`LICENSES/`](LICENSES/README.md).
+
+## Privacy
+
+This repository collects no data about the people who use the lists.
+
+* The lists are plain text: one domain or IP address per line. They contain no
+  scripts, cookies or anything else that could send data anywhere.
+* The lists are built in GitHub Actions. The generator fetches the source lists,
+  queries public DNS resolvers (Cloudflare, Google, Quad9) and tests the listed
+  servers over HTTPS, HTTP and ping. It never connects to users' networks or
+  devices.
+* The README files contain no images or tracking pixels.
+* When UniFi fetches a list, the request goes to GitHub
+  (`raw.githubusercontent.com`). Like any web request, GitHub sees your
+  network's public IP address and the time of the request, and handles them
+  under its
+  [privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+* GitHub's Traffic statistics show the repository maintainer only aggregate
+  counts of page views and clones. They do not show who uses the lists.
+* If you don't want GitHub to see your network's address, serve the lists from
+  your own web server and give UniFi that URL.
