@@ -62,9 +62,8 @@ tiedostossa `unifi/lists/stats.json`.
 * Domain-esto toimii vain, jos laitteet käyttävät gatewaytä nimipalvelimenaan.
 * Yhteisön mukaan yhden listan raja on noin 100 000 merkintää ja kaikkien listojen
   yhteensä noin 500 000. Ubiquiti ei ole julkaissut virallisia rajoja.
-* UniFi Network listat on tehty palomuuria varten. DNS-tason esto (UniFin
-  Content Filter tai Pi-hole) ei aiheuta CDN-sivuvaikutuksia. Content Filterin
-  käyttöönotto on etusivun [README:ssä](../README.md#esto-unifin-nimipalvelimella-content-filter).
+* UniFi Network listat on tehty palomuuria varten. Puhdas DNS-tason mainosesto
+  (Pi-hole) ei aiheuta CDN-sivuvaikutuksia.
 
 ## Paikallinen ajo
 
