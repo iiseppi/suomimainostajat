@@ -40,8 +40,54 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
 2. Type: **Domain**, tai **IP** tiedostolle `windows_spy_ip.txt`
 3. Source: **Dynamic**, ja URL yllä olevasta luettelosta
 4. Päivitysväli: **24 h**
-5. Tee palomuurisääntö (Policy Engine / Zone-Based Firewall), joka estää
-   liikenteen listaan.
+5. Tee palomuurisääntö, joka estää liikenteen listaan:
+   **Settings → Policy Table → Create New Policy**, Action **Block**, Source Zone
+   **Internal**, Destination Zone **External** ja kohteeksi lista. Network 10:ssä
+   polku on Settings → Policy Engine → Policy Table.
+
+### Sivuston salliminen (whitelist)
+
+Jos estolista estää sivuston, jonka haluat pitää käytössä, tee sille oma
+sallittujen lista ja Allow-sääntö estosääntöjen yläpuolelle. UniFi käy säännöt
+läpi ylhäältä alas, ja ensimmäinen osuva sääntö ratkaisee. Esimerkissä sallitaan
+io-tech.fi.
+
+1. **Tee sallittujen lista.** Network Lists → Create New:
+   * Name: `Sallitut`
+   * Type: **Domain**
+   * Source: käsin syötetty lista (ei Dynamic)
+   * Domainit: `io-tech.fi` ja `www.io-tech.fi`. Lisää jokainen osoite erikseen,
+     koska alidomainit eivät välttämättä sisälly pääverkkotunnukseen.
+2. **Tee sallimissääntö.** Settings → Policy Table → Create New Policy:
+   * Name: `Salli sallitut sivustot`
+   * Action: **Allow**
+   * Source Zone: **Internal**
+   * Destination Zone: **External**, kohteeksi lista `Sallitut`
+3. **Tee estosäännöt**, jos niitä ei vielä ole: samat asetukset, mutta Action
+   **Block** ja kohteeksi estolista, esimerkiksi `mainokset`.
+4. **Järjestä säännöt.** Avaa Zones-näkymä ja valitse vyöhykepari
+   Internal → External. Valitse sääntölistan alta **Reorder** ja siirrä
+   `Salli sallitut sivustot` ylimmäksi.
+
+Valmis järjestys vyöhykeparille Internal → External:
+
+| # | Sääntö | Action | Kohde |
+|---|---|---|---|
+| 1 | Salli sallitut sivustot | Allow | `Sallitut` |
+| 2 | Estä mainokset | Block | `mainokset` |
+| 3 | Estä laitteiden seuranta | Block | `laitteet` |
+| … | Allow All Traffic (oletus) | Allow | kaikki |
+
+Huomioitavaa:
+
+* Sallimissääntö sallii sivuston IP-osoitteet kokonaan. Jos samaa osoitetta
+  käyttää myös estetty domain (esimerkiksi CDN:ssä), sekin pääsee läpi.
+* Sivu voi hakea sisältöä myös muista domaineista. Jos sivu ei vieläkään toimi,
+  kytke estosääntöön **Flows Logging**, katso Insights-näkymästä, mitä estetään,
+  ja lisää tarvittavat osoitteet `Sallitut`-listaan.
+* Jos verkossa on muitakin sisäisiä vyöhykkeitä (esimerkiksi Hotspot tai oma
+  IoT-vyöhyke), tee sallimis- ja estosäännöt jokaiselle.
+* Valikkojen nimet vaihtelevat UniFi Networkin versioiden välillä.
 
 ### Päivittyminen
 
