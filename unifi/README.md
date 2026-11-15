@@ -3,7 +3,7 @@
 Itsestään päivittyvät estolistat UniFi Networkin (11.0.81+ / UniFi OS 6.0.10+)
 dynaamisiksi **Network Lists** -listoiksi.
 
-GitHub Actions ajaa `unifi/build_lists.py`:n joka yö ja aina kun `list.txt` tai `cameleon.txt` muuttuu. Skripti hakee lähdelistat, jakaa
+GitHub Actions ajaa `unifi/build_lists.py`:n joka yö ja aina kun `list.txt`, `cameleon.txt` tai skripti muuttuu. Skripti hakee lähdelistat, jakaa
 jokaisen merkinnän yhteen kategoriaan ja poistaa merkinnät, jotka eivät vastaa
 lainkaan. Muutokset tallentuvat `unifi/lists/`-kansioon.
 
@@ -15,11 +15,14 @@ lainkaan. Muutokset tallentuvat `unifi/lists/`-kansioon.
 | `unifi/lists/windows_spy_ip.txt` | IP | WindowsSpyBlocker: firewall/spy |
 | `unifi/lists/mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlackin mainososiot, Disconnect, Cameleon) |
 | `unifi/lists/suomi_mainokset.txt` | Domain | suomimainostajat-lista ja muiden mainoslistojen `.fi`-domainit (paitsi ei-suomalaiset kuten simpli.fi) |
+| `unifi/lists/laitteet.txt` | Domain | HaGeZin native tracker -listat: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft. GPL-3.0, katso [`LICENSES/`](../LICENSES/README.md) |
 | `unifi/lists/host.txt` | Domain | Muut: haittaohjelmat, huijaukset, roskaposti (StevenBlackin muut osiot) |
 | `unifi/lists/ip.txt` | IP | Muut IP:t (tällä hetkellä lähteissä ei ole yhtään) |
 
 Jokainen merkintä on vain yhdessä listassa. Etusija on tässä järjestyksessä:
-windows spy → suomi mainokset → mainokset → host/ip.
+windows spy → suomi mainokset → laitteet → mainokset → host/ip.
+HaGeZin domainit ovat vain `laitteet.txt`:ssä, jotta GPL-3.0-lisensoitu data ei
+sekoitu muihin listoihin.
 
 Ajon tilastot (kuinka moni merkintä jäi ja kuinka moni poistettiin ja miksi) ovat
 tiedostossa `unifi/lists/stats.json`.

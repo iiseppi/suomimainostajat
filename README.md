@@ -13,6 +13,7 @@ Listat on tehty UniFi Networkin (11.0.81+ / UniFi OS 6.0.10+) dynaamisiksi
 | Lista | Tyyppi | Sisältö | Koko noin |
 |---|---|---|---|
 | `suomi_mainokset.txt` | Domain | Suomalaiset mainos- ja seurantadomainit (`list.txt` ja muiden listojen `.fi`-domainit) | 20 |
+| `laitteet.txt` | Domain | Laitteiden ja käyttöjärjestelmien omat seurantapalvelimet: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft (HaGeZi) | 3 000 |
 | `mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlack, Disconnect, Cameleon) | 27 600 |
 | `windows_spy.txt` | Domain | Windowsin telemetria, lisäpalvelut ja Windows Update (WindowsSpyBlocker) | 430 |
 | `windows_spy_ip.txt` | IP | Windowsin telemetrian IP-osoitteet (WindowsSpyBlocker) | 10 |
@@ -26,6 +27,7 @@ Listojen osoitteet UniFia varten:
 
 ```
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/suomi_mainokset.txt
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/laitteet.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/mainokset.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/windows_spy.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/windows_spy_ip.txt
@@ -60,6 +62,9 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
   IP-osoitteet. CDN-palveluissa (Cloudflare, Google, Azure, Akamai, CloudFront)
   samoja osoitteita käyttävät myös tavalliset sivustot. Pelkkään mainosestoon
   DNS-tason estäjä, kuten Pi-hole tai AdGuard Home, on tarkempi.
+* `laitteet.txt` estää valmistajien seurannan kaikilta laitteilta, joihin sääntö
+  kohdistuu. Jos jonkin laitteen toiminto lakkaa, rajaa sääntö pois siltä
+  laitteelta.
 * `windows_spy.txt` estää myös Windows Updaten. Ilman poikkeusta Windows-koneet
   eivät saa päivityksiä.
 * Domain-esto toimii vain, jos laitteet käyttävät gatewaytä nimipalvelimenaan.
@@ -91,7 +96,15 @@ Kun muutos on masterissa, UniFi-listat rakentuvat uudelleen automaattisesti.
 ## Lähteet
 
 * [harriko/suomimainostajat](https://github.com/harriko/suomimainostajat)
+* [HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists), native tracker -listat
 * [StevenBlack/hosts](https://github.com/StevenBlack/hosts)
 * [crazy-max/WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker)
 * [Disconnect](https://disconnect.me/), mainoslista `simple_ad.txt`
 * Cameleon (`cameleon.txt`)
+
+## Lisenssit
+
+Jokainen lista noudattaa lähteidensä lisenssejä. `laitteet.txt` on GPL-3.0:n
+alainen, ja `mainokset.txt` sekä `suomi_mainokset.txt` sisältävät dataa, jota saa
+käyttää vain ei-kaupallisesti. Lähteiden lisenssit ja tarkemmat tiedot ovat
+kansiossa [`LICENSES/`](LICENSES/README.md).

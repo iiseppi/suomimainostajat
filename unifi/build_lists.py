@@ -5,7 +5,7 @@ Fetches the sources, puts every entry into exactly one category, drops domains
 that no longer resolve and IPs that do not answer at all, and writes plain
 lists (one entry per line, no comments) that UniFi can load from a URL.
 
-Category priority: windows_spy > suomi_mainokset > mainokset > host / ip
+Category priority: windows_spy > suomi_mainokset > laitteet > mainokset > host / ip
 
 Only the Python standard library is used.
 """
@@ -42,6 +42,14 @@ SOURCES = [
     ("suomi_list", "plain", "https://raw.githubusercontent.com/iiseppi/suomimainostajat/refs/heads/master/list.txt"),
     ("disconnect_ad", "plain", "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"),
 ]
+# HaGeZi native tracker lists (GPL-3.0): trackers built into devices, apps and
+# operating systems. They go to their own list (laitteet.txt) so that the other
+# lists stay free of GPL-licensed data. The "-onlydomains" files are plain names;
+# the other files use "*.domain" wildcards, which UniFi cannot resolve.
+HAGEZI = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard"
+HAGEZI_NATIVE = ["lgwebos", "samsung", "amazon", "roku", "apple", "xiaomi", "huawei",
+                 "oppo-realme", "vivo", "tiktok", "winoffice"]
+SOURCES += [(f"hagezi_{n}", "plain", f"{HAGEZI}/native.{n}-onlydomains.txt") for n in HAGEZI_NATIVE]
 
 # StevenBlack sections ("# Start <name>") that are about ads and tracking.
 # Everything else in StevenBlack (malware, scam, spam, dead...) goes to "host",
@@ -71,6 +79,7 @@ OUTPUTS = {
     "windows_spy_ip": ("windows_spy_ip.txt", "ip"),
     "mainokset": ("mainokset.txt", "domain"),
     "suomi_mainokset": ("suomi_mainokset.txt", "domain"),
+    "laitteet": ("laitteet.txt", "domain"),
     "host": ("host.txt", "domain"),
     "ip": ("ip.txt", "ip"),
 }
@@ -172,6 +181,8 @@ def categorize(kind, value, tags):
         return "windows_spy_ip" if kind == "ip" else "windows_spy"
     if "suomi_list" in tags:
         return "suomi_mainokset"
+    if any(t.startswith("hagezi_") for t in tags):
+        return "ip" if kind == "ip" else "laitteet"
     is_ad = any(t in AD_SOURCES or (t.startswith("sb:") and t[3:] in SB_AD_SECTIONS) for t in tags)
     if not is_ad and kind == "domain" and "sb:StevenBlack" in tags and AD_KEYWORDS.search(value):
         is_ad = True
