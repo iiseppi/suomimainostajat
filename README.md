@@ -47,6 +47,9 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
    **Internal**, Destination Zone **External** ja kohteeksi lista. Network 10:ssä
    polku on Settings → Policy Engine → Policy Table.
 
+Suomalaiset mainostajat kannattaa estää mieluummin UniFin nimipalvelimella:
+katso [Esto UniFin nimipalvelimella](#esto-unifin-nimipalvelimella-content-filter).
+
 ### Sivuston salliminen (whitelist)
 
 Jos estolista estää sivuston, jonka haluat pitää käytössä, tee sille oma
@@ -91,6 +94,38 @@ Huomioitavaa:
   IoT-vyöhyke), tee sallimis- ja estosäännöt jokaiselle.
 * Valikkojen nimet vaihtelevat UniFi Networkin versioiden välillä.
 
+### Esto UniFin nimipalvelimella (Content Filter)
+
+UniFi-gateway on myös verkon nimipalvelin. Sen Content Filter estää domainit
+DNS-tasolla samaan tapaan kuin Pi-hole: estetyn nimen kyselyyn ei tule
+osoitetta, joten yhteyttä ei synny. Esto koskee vain nimeä, joten samassa
+CDN-osoitteessa olevat muut sivustot toimivat edelleen.
+
+Content Filterin estolista ei osaa hakea listaa URL-osoitteesta, joten domainit
+lisätään käsin. Suomalaisia mainostajia on noin 20, joten se käy nopeasti:
+
+1. Avaa [`unifi/lists/suomi_mainokset.txt`](unifi/lists/suomi_mainokset.txt).
+2. **Settings → CyberSecure → Content Filter** → luo uusi suodatin.
+3. **Source**: valitse verkot tai laitteet, joita esto koskee.
+4. **Blocklist**: lisää listan domainit.
+5. Tallenna.
+
+Huomioitavaa:
+
+* [Ubiquitin ohjeen](https://help.ui.com/hc/en-us/articles/12568927589143-Content-and-Domain-Filtering-in-UniFi)
+  mukaan Content Filter ohjaa DNS-liikenteen gatewaylle, joten laitteisiin ei
+  tarvitse tehdä asetuksia.
+* Salattu DNS ohittaa gatewayn: selaimen DNS over HTTPS, Androidin Private DNS,
+  iCloud Private Relay ja VPN. Niitä käyttävillä laitteilla esto ei toimi.
+* Estolista ei päivity itsestään. Kun `suomi_mainokset.txt` muuttuu, lisää uudet
+  domainit käsin.
+* Kun suomalaiset mainostajat on estetty Content Filterillä, niille ei tarvita
+  palomuurisääntöä.
+* Suuria listoja (`mainokset.txt`, `host.txt`, `laitteet.txt`) ei kannata
+  syöttää käsin. Niille UniFissa on vain palomuurisääntö.
+* Jos Content Filter estää sivuston, jonka haluat pitää käytössä, lisää se saman
+  suodattimen **Allowlist**-kohtaan.
+
 ### Päivittyminen
 
 * GitHub Actions rakentaa listat uudelleen joka yö klo 02:23 UTC (Suomessa
@@ -108,8 +143,9 @@ Huomioitavaa:
 
 * **Domain-esto voi estää muitakin sivustoja.** UniFi estää domainin
   IP-osoitteet. CDN-palveluissa (Cloudflare, Google, Azure, Akamai, CloudFront)
-  samoja osoitteita käyttävät myös tavalliset sivustot. Pelkkään mainosestoon
-  DNS-tason estäjä, kuten Pi-hole tai AdGuard Home, on tarkempi.
+  samoja osoitteita käyttävät myös tavalliset sivustot. DNS-tason esto
+  ([UniFin Content Filter](#esto-unifin-nimipalvelimella-content-filter) tai
+  Pi-hole) on tarkempi.
 * `laitteet.txt` estää valmistajien seurannan kaikilta laitteilta, joihin sääntö
   kohdistuu. Jos jonkin laitteen toiminto lakkaa, rajaa sääntö pois siltä
   laitteelta.
@@ -130,7 +166,7 @@ Tarkemmat tiedot ovat tiedostossa [`unifi/README.md`](unifi/README.md).
 | [`cameleon.txt`](cameleon.txt) | Cameleonin hosts-lista (2018), yksi `mainokset.txt`:n lähteistä. |
 | [`unifi/`](unifi) | UniFi-listojen generaattori ja valmiit listat. |
 
-`list.txt` käy sellaisenaan myös Pi-holen ja AdGuard Homen estolistaksi:
+`list.txt` käy sellaisenaan myös Pi-holen estolistaksi:
 
 ```
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/list.txt
@@ -230,6 +266,9 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
    **Internal**, Destination Zone **External**, with the list as the destination.
    In Network 10 the path is Settings → Policy Engine → Policy Table.
 
+The Finnish advertisers are better blocked with UniFi's DNS server: see
+[Blocking with UniFi's DNS server](#blocking-with-unifis-dns-server-content-filter).
+
 ### Allowing a site (allowlist)
 
 If a blocklist blocks a site you want to keep using, create an allowlist for it
@@ -274,6 +313,39 @@ Notes:
   zone), create the allow and block policies for each of them.
 * Menu names vary between UniFi Network versions.
 
+### Blocking with UniFi's DNS server (Content Filter)
+
+The UniFi gateway is also the network's DNS server. Its Content Filter blocks
+domains at the DNS level, the same way Pi-hole does: a query for a blocked name
+gets no address, so no connection is made. Only the name is blocked, so other
+sites on the same CDN address keep working.
+
+The Content Filter blocklist cannot load a list from a URL, so the domains are
+added by hand. There are only about 20 Finnish advertisers, so it is quick:
+
+1. Open [`unifi/lists/suomi_mainokset.txt`](unifi/lists/suomi_mainokset.txt).
+2. **Settings → CyberSecure → Content Filter** → create a new filter.
+3. **Source**: pick the networks or devices the block applies to.
+4. **Blocklist**: add the domains from the list.
+5. Save.
+
+Things to know:
+
+* According to [Ubiquiti's guide](https://help.ui.com/hc/en-us/articles/12568927589143-Content-and-Domain-Filtering-in-UniFi),
+  the Content Filter redirects DNS traffic to the gateway, so devices need no
+  settings.
+* Encrypted DNS bypasses the gateway: DNS over HTTPS in the browser, Android
+  Private DNS, iCloud Private Relay and VPNs. The block does not work on devices
+  that use them.
+* The blocklist does not update by itself. When `suomi_mainokset.txt` changes,
+  add the new domains by hand.
+* Once the Finnish advertisers are blocked with the Content Filter, they need no
+  firewall policy.
+* Large lists (`mainokset.txt`, `host.txt`, `laitteet.txt`) are not practical to
+  enter by hand. For those, UniFi only offers the firewall policy.
+* If the Content Filter blocks a site you want to keep, add it to the same
+  filter's **Allowlist**.
+
 ### Updates
 
 * GitHub Actions rebuilds the lists every night at 02:23 UTC. A run also starts
@@ -291,8 +363,9 @@ Notes:
 
 * **Domain blocking can block other sites too.** UniFi blocks the domain's IP
   addresses. On CDNs (Cloudflare, Google, Azure, Akamai, CloudFront) ordinary
-  sites share the same addresses. For ad blocking alone, a DNS-level blocker such
-  as Pi-hole or AdGuard Home is more precise.
+  sites share the same addresses. DNS-level blocking
+  ([UniFi's Content Filter](#blocking-with-unifis-dns-server-content-filter) or
+  Pi-hole) is more precise.
 * `laitteet.txt` blocks vendor tracking for every device the policy covers. If a
   feature on some device stops working, exclude that device from the policy.
 * `windows_spy.txt` also blocks Windows Update. Without an exception, Windows
@@ -312,7 +385,7 @@ More details (in Finnish) are in [`unifi/README.md`](unifi/README.md).
 | [`cameleon.txt`](cameleon.txt) | Cameleon's hosts list (2018), one of the sources of `mainokset.txt`. |
 | [`unifi/`](unifi) | The generator for the UniFi lists, and the built lists. |
 
-`list.txt` also works as is as a Pi-hole or AdGuard Home blocklist:
+`list.txt` also works as is as a Pi-hole blocklist:
 
 ```
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/list.txt
