@@ -1,0 +1,46 @@
+name: Päivitä UniFi-listat
+
+on:
+  schedule:
+    - cron: "23 2 * * *"   # joka yö klo 02:23 UTC
+  push:
+    branches: [master]
+    paths:
+      - list.txt
+      - cameleon.txt
+      - unifi/build_lists.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: unifi-listat
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rakenna listat
+        run: python3 -I unifi/build_lists.py --out unifi/lists
+
+      - name: Tallenna muutokset
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add unifi/lists
+          if git diff --cached --quiet; then
+            echo "Ei muutoksia"
+          else
+            git commit -m "Päivitä UniFi-listat $(date -u +%Y-%m-%d)"
+            git pull --rebase origin master
+            git push origin HEAD:master
+          fi
