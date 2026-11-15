@@ -50,13 +50,13 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
 Jos estolista estää sivuston, jonka haluat pitää käytössä, tee sille oma
 sallittujen lista ja Allow-sääntö estosääntöjen yläpuolelle. UniFi käy säännöt
 läpi ylhäältä alas, ja ensimmäinen osuva sääntö ratkaisee. Esimerkissä sallitaan
-io-tech.fi.
+kernel.org
 
 1. **Tee sallittujen lista.** Network Lists → Create New:
    * Name: `Sallitut`
    * Type: **Domain**
    * Source: käsin syötetty lista (ei Dynamic)
-   * Domainit: `io-tech.fi` ja `www.io-tech.fi`. Lisää jokainen osoite erikseen,
+   * Domainit: `kernel.org` ja `www.kernel.org`. Lisää jokainen osoite erikseen,
      koska alidomainit eivät välttämättä sisälly pääverkkotunnukseen.
 2. **Tee sallimissääntö.** Settings → Policy Table → Create New Policy:
    * Name: `Salli sallitut sivustot`
