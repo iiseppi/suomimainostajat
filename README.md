@@ -1,5 +1,7 @@
 # suomimainostajat
 
+*English version: [below](#suomimainostajat-in-english).*
+
 Estolista suomalaisille mainos- ja seurantapalvelimille. Repossa on myös
 itsestään päivittyvät estolistat UniFi Networkin palomuuriin.
 
@@ -50,7 +52,7 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
 Jos estolista estää sivuston, jonka haluat pitää käytössä, tee sille oma
 sallittujen lista ja Allow-sääntö estosääntöjen yläpuolelle. UniFi käy säännöt
 läpi ylhäältä alas, ja ensimmäinen osuva sääntö ratkaisee. Esimerkissä sallitaan
-kernel.org
+kernel.org.
 
 1. **Tee sallittujen lista.** Network Lists → Create New:
    * Name: `Sallitut`
@@ -154,3 +156,164 @@ Jokainen lista noudattaa lähteidensä lisenssejä. `laitteet.txt` on GPL-3.0:n
 alainen, ja `mainokset.txt` sekä `suomi_mainokset.txt` sisältävät dataa, jota saa
 käyttää vain ei-kaupallisesti. Lähteiden lisenssit ja tarkemmat tiedot ovat
 kansiossa [`LICENSES/`](LICENSES/README.md).
+
+---
+
+# suomimainostajat (in English)
+
+A blocklist of Finnish ad and tracking servers. The repository also has
+self-updating blocklists for the UniFi Network firewall.
+
+The original list is [harriko/suomimainostajat](https://github.com/harriko/suomimainostajat).
+
+## UniFi Network lists
+
+The lists are made for UniFi Network (11.0.81+ / UniFi OS 6.0.10+) dynamic
+**Network Lists**. Each entry is in only one list.
+
+| List | Type | Contents | Approx. size |
+|---|---|---|---|
+| `suomi_mainokset.txt` | Domain | Finnish ad and tracking domains (`list.txt` and `.fi` domains from the other lists) | 20 |
+| `laitteet.txt` | Domain | Trackers built into devices and operating systems: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft (HaGeZi) | 3,000 |
+| `mainokset.txt` | Domain | Ad and tracking domains (StevenBlack, Disconnect, Cameleon) | 27,600 |
+| `windows_spy.txt` | Domain | Windows telemetry, extra services and Windows Update (WindowsSpyBlocker) | 430 |
+| `windows_spy_ip.txt` | IP | Windows telemetry IP addresses (WindowsSpyBlocker) | 10 |
+| `host.txt` | Domain | Malware, scams and spam (StevenBlack) | 18,600 |
+
+The file names are Finnish: *suomi_mainokset* means Finnish ads, *laitteet*
+devices and *mainokset* ads.
+
+The sizes are from November 2026. Current numbers are in
+[`unifi/lists/stats.json`](unifi/lists/stats.json). There is also `ip.txt` for
+other IP addresses, but the sources currently have none.
+
+List URLs for UniFi:
+
+```
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/suomi_mainokset.txt
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/laitteet.txt
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/mainokset.txt
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/windows_spy.txt
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/windows_spy_ip.txt
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/host.txt
+```
+
+### Setup
+
+1. **Networks → Network Lists → Create New**
+2. Type: **Domain**, or **IP** for `windows_spy_ip.txt`
+3. Source: **Dynamic**, with a URL from the list above
+4. Refresh interval: **24 h**
+5. Create a firewall policy that blocks traffic to the list:
+   **Settings → Policy Table → Create New Policy**, Action **Block**, Source Zone
+   **Internal**, Destination Zone **External**, with the list as the destination.
+   In Network 10 the path is Settings → Policy Engine → Policy Table.
+
+### Allowing a site (allowlist)
+
+If a blocklist blocks a site you want to keep using, create an allowlist for it
+and an Allow policy above the block policies. UniFi evaluates policies from top
+to bottom, and the first matching policy wins. The example allows kernel.org.
+
+1. **Create the allowlist.** Network Lists → Create New:
+   * Name: `Allowlist`
+   * Type: **Domain**
+   * Source: entered by hand (not Dynamic)
+   * Domains: `kernel.org` and `www.kernel.org`. Add each name separately,
+     because the parent domain may not cover its subdomains.
+2. **Create the allow policy.** Settings → Policy Table → Create New Policy:
+   * Name: `Allow allowlist`
+   * Action: **Allow**
+   * Source Zone: **Internal**
+   * Destination Zone: **External**, with the list `Allowlist` as the destination
+3. **Create the block policies** if you don't have them yet: the same settings,
+   but Action **Block** and a blocklist as the destination, for example
+   `mainokset`.
+4. **Order the policies.** Open the Zones view and select the zone pair
+   Internal → External. Choose **Reorder** below the policy list and move
+   `Allow allowlist` to the top.
+
+The finished order for Internal → External:
+
+| # | Policy | Action | Destination |
+|---|---|---|---|
+| 1 | Allow allowlist | Allow | `Allowlist` |
+| 2 | Block ads | Block | `mainokset` |
+| 3 | Block device tracking | Block | `laitteet` |
+| … | Allow All Traffic (default) | Allow | any |
+
+Notes:
+
+* The allow policy allows the site's IP addresses completely. If a blocked
+  domain uses the same address (on a CDN, for example), it gets through too.
+* A page can load content from other domains as well. If the site still does
+  not work, turn on **Flows Logging** in the block policy, check in Insights what
+  is being blocked, and add the names you need to `Allowlist`.
+* If your network has other internal zones (such as Hotspot or your own IoT
+  zone), create the allow and block policies for each of them.
+* Menu names vary between UniFi Network versions.
+
+### Updates
+
+* GitHub Actions rebuilds the lists every night at 02:23 UTC. A run also starts
+  right away when `list.txt`, `cameleon.txt` or `unifi/build_lists.py` changes.
+  A run takes about half an hour.
+* Every run fetches the sources again and checks every entry. An entry is
+  dropped if its domain does not resolve or none of its addresses answers HTTPS,
+  HTTP or ping. If the server answers again later, the entry returns in the next
+  run.
+* If any list would shrink by more than 25% in one run, nothing is saved and the
+  previous lists stay in use.
+* UniFi fetches each list by itself at the refresh interval you chose.
+
+### Things to know
+
+* **Domain blocking can block other sites too.** UniFi blocks the domain's IP
+  addresses. On CDNs (Cloudflare, Google, Azure, Akamai, CloudFront) ordinary
+  sites share the same addresses. For ad blocking alone, a DNS-level blocker such
+  as Pi-hole or AdGuard Home is more precise.
+* `laitteet.txt` blocks vendor tracking for every device the policy covers. If a
+  feature on some device stops working, exclude that device from the policy.
+* `windows_spy.txt` also blocks Windows Update. Without an exception, Windows
+  computers get no updates.
+* Domain blocking only works if devices use the gateway as their DNS server.
+* According to the community, the limit is about 100,000 entries per list and
+  about 500,000 for all lists combined.
+
+More details (in Finnish) are in [`unifi/README.md`](unifi/README.md).
+
+## Other files
+
+| File | Contents |
+|---|---|
+| [`list.txt`](list.txt) | Finnish ad and tracking domains, one per line. `suomi_mainokset.txt` is built from it. |
+| [`hosts`](hosts) | The original project's file. Same content as `list.txt`. |
+| [`cameleon.txt`](cameleon.txt) | Cameleon's hosts list (2018), one of the sources of `mainokset.txt`. |
+| [`unifi/`](unifi) | The generator for the UniFi lists, and the built lists. |
+
+`list.txt` also works as is as a Pi-hole or AdGuard Home blocklist:
+
+```
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/list.txt
+```
+
+## Adding a domain
+
+Add the domain to `list.txt` on its own line, without `http://` or a path. Once
+the change is on master, the UniFi lists are rebuilt automatically.
+
+## Sources
+
+* [harriko/suomimainostajat](https://github.com/harriko/suomimainostajat)
+* [HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists), native tracker lists
+* [StevenBlack/hosts](https://github.com/StevenBlack/hosts)
+* [crazy-max/WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker)
+* [Disconnect](https://disconnect.me/), ad list `simple_ad.txt`
+* Cameleon (`cameleon.txt`)
+
+## Licenses
+
+Each list follows the licenses of its sources. `laitteet.txt` is under GPL-3.0,
+and `mainokset.txt` and `suomi_mainokset.txt` contain data that may only be used
+non-commercially. The source licenses and details (in Finnish) are in
+[`LICENSES/`](LICENSES/README.md).
