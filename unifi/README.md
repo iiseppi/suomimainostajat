@@ -12,7 +12,7 @@ lainkaan. Muutokset tallentuvat `unifi/lists/`-kansioon.
 | Tiedosto | Tyyppi | Sisältö |
 |---|---|---|
 | `unifi/lists/windows_spy.txt` | Domain | WindowsSpyBlocker: spy, extra, update |
-| `unifi/lists/windows_spy_ip.txt` | IP | WindowsSpyBlocker: firewall/spy |
+| `unifi/lists/windows_spy_ip.txt` | IPv4 | WindowsSpyBlocker: firewall/spy |
 | `unifi/lists/mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlackin mainososiot, Disconnect, Cameleon) |
 | `unifi/lists/suomi_mainokset.txt` | Domain | suomimainostajat-lista ja muiden mainoslistojen `.fi`-domainit (paitsi ei-suomalaiset kuten simpli.fi) |
 | `unifi/lists/laitteet.txt` | Domain | HaGeZin native tracker -listat: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft. GPL-3.0, katso [`LICENSES/`](../LICENSES/README.md) |
@@ -21,8 +21,8 @@ lainkaan. Muutokset tallentuvat `unifi/lists/`-kansioon.
 
 Jokainen merkintä on vain yhdessä listassa. Etusija on tässä järjestyksessä:
 windows spy → suomi mainokset → laitteet → mainokset → host/ip.
-HaGeZin domainit ovat vain `laitteet.txt`:ssä, jotta GPL-3.0-lisensoitu data ei
-sekoitu muihin listoihin.
+HaGeZin domainit ovat vain `laitteet.txt`:ssä. Listojen lisenssit ovat kansiossa
+[`LICENSES/`](../LICENSES/README.md).
 
 Ajon tilastot (kuinka moni merkintä jäi ja kuinka moni poistettiin ja miksi) ovat
 tiedostossa `unifi/lists/stats.json`.
@@ -45,12 +45,12 @@ tiedostossa `unifi/lists/stats.json`.
 ## Käyttö UniFissa
 
 1. **Networks → Network Lists → Create New**
-2. Type: **Domain** (tai **IP** `*_ip.txt`-tiedostoille)
+2. Type: **Domain** (tai **IPv4** tiedostolle `windows_spy_ip.txt`)
 3. Source: **Dynamic**, ja URL esimerkiksi
    `https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/mainokset.txt`
 4. Päivitysväli: 24 h
-5. Tee palomuurisääntö (Policy Engine / Zone-Based Firewall), joka estää liikenteen
-   tähän listaan.
+5. Tee palomuurisääntö, joka estää liikenteen tähän listaan: Settings → Policy
+   Engine → Policy Table, Action **Reject**.
 
 ## Huomioitavaa
 

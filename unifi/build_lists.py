@@ -43,8 +43,8 @@ SOURCES = [
     ("disconnect_ad", "plain", "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"),
 ]
 # HaGeZi native tracker lists (GPL-3.0): trackers built into devices, apps and
-# operating systems. They go to their own list (laitteet.txt) so that the other
-# lists stay free of GPL-licensed data. The "-onlydomains" files are plain names;
+# operating systems. They go to their own list (laitteet.txt), so device tracking
+# can be blocked separately from ads. The "-onlydomains" files are plain names;
 # the other files use "*.domain" wildcards, which UniFi cannot resolve.
 HAGEZI = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard"
 HAGEZI_NATIVE = ["lgwebos", "samsung", "amazon", "roku", "apple", "xiaomi", "huawei",

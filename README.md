@@ -18,7 +18,7 @@ Listat on tehty UniFi Networkin (11.0.81+ / UniFi OS 6.0.10+) dynaamisiksi
 | `laitteet.txt` | Domain | Laitteiden ja käyttöjärjestelmien omat seurantapalvelimet: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft (HaGeZi) | 3 000 |
 | `mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlack, Disconnect, Cameleon) | 27 600 |
 | `windows_spy.txt` | Domain | Windowsin telemetria, lisäpalvelut ja Windows Update (WindowsSpyBlocker) | 430 |
-| `windows_spy_ip.txt` | IP | Windowsin telemetrian IP-osoitteet (WindowsSpyBlocker) | 10 |
+| `windows_spy_ip.txt` | IPv4 | Windowsin telemetrian IP-osoitteet (WindowsSpyBlocker) | 10 |
 | `host.txt` | Domain | Haittaohjelmat, huijaukset ja roskaposti (StevenBlack) | 18 600 |
 
 Koot ovat marraskuulta 2026. Ajantasaiset luvut ovat tiedostossa
@@ -39,13 +39,14 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
 ### Käyttöönotto
 
 1. **Networks → Network Lists → Create New**
-2. Type: **Domain**, tai **IP** tiedostolle `windows_spy_ip.txt`
+2. Type: **Domain**, tai **IPv4** tiedostolle `windows_spy_ip.txt`
 3. Source: **Dynamic**, ja URL yllä olevasta luettelosta
 4. Päivitysväli: **24 h**
 5. Tee palomuurisääntö, joka estää liikenteen listaan:
-   **Settings → Policy Table → Create New Policy**, Action **Reject**, Source Zone
-   **Internal**, Destination Zone **External** ja kohteeksi lista. Network 10:ssä
-   polku on Settings → Policy Engine → Policy Table.
+   **Settings → Policy Engine → Policy Table → Create New Policy**, Action
+   **Reject**, Source Zone **Internal**, Destination Zone **External** ja
+   kohteeksi lista. Reject kertoo selaimelle heti, että yhteys on estetty, joten
+   sivu ei jää odottamaan mainoksia.
 
 ### Sivuston salliminen (whitelist)
 
@@ -60,13 +61,14 @@ kernel.org.
    * Source: käsin syötetty lista (ei Dynamic)
    * Domainit: `kernel.org` ja `www.kernel.org`. Lisää jokainen osoite erikseen,
      koska alidomainit eivät välttämättä sisälly pääverkkotunnukseen.
-2. **Tee sallimissääntö.** Settings → Policy Table → Create New Policy:
+2. **Tee sallimissääntö.** Settings → Policy Engine → Policy Table → Create New
+   Policy:
    * Name: `Salli sallitut sivustot`
    * Action: **Allow**
    * Source Zone: **Internal**
    * Destination Zone: **External**, kohteeksi lista `Sallitut`
 3. **Tee estosäännöt**, jos niitä ei vielä ole: samat asetukset, mutta Action
-   **Block** ja kohteeksi estolista, esimerkiksi `mainokset`.
+   **Reject** ja kohteeksi estolista, esimerkiksi `mainokset`.
 4. **Järjestä säännöt.** Avaa Zones-näkymä ja valitse vyöhykepari
    Internal → External. Valitse sääntölistan alta **Reorder** ja siirrä
    `Salli sallitut sivustot` ylimmäksi.
@@ -76,8 +78,8 @@ Valmis järjestys vyöhykeparille Internal → External:
 | # | Sääntö | Action | Kohde |
 |---|---|---|---|
 | 1 | Salli sallitut sivustot | Allow | `Sallitut` |
-| 2 | Estä mainokset | Block | `mainokset` |
-| 3 | Estä laitteiden seuranta | Block | `laitteet` |
+| 2 | Estä mainokset | Reject | `mainokset` |
+| 3 | Estä laitteiden seuranta | Reject | `laitteet` |
 | … | Allow All Traffic (oletus) | Allow | kaikki |
 
 Huomioitavaa:
@@ -153,9 +155,9 @@ Kun muutos on masterissa, UniFi-listat rakentuvat uudelleen automaattisesti.
 ## Lisenssit
 
 Jokainen lista noudattaa lähteidensä lisenssejä. `laitteet.txt` on GPL-3.0:n
-alainen, ja `mainokset.txt` sekä `suomi_mainokset.txt` sisältävät dataa, jota saa
-käyttää vain ei-kaupallisesti. Lähteiden lisenssit ja tarkemmat tiedot ovat
-kansiossa [`LICENSES/`](LICENSES/README.md).
+alainen. `mainokset.txt` ja `suomi_mainokset.txt` sisältävät Disconnectin
+GPL-3.0-dataa sekä dataa, jota saa käyttää vain ei-kaupallisesti. Lähteiden
+lisenssit ja tarkemmat tiedot ovat kansiossa [`LICENSES/`](LICENSES/README.md).
 
 ## Tietosuoja
 
@@ -198,7 +200,7 @@ The lists are made for UniFi Network (11.0.81+ / UniFi OS 6.0.10+) dynamic
 | `laitteet.txt` | Domain | Trackers built into devices and operating systems: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft (HaGeZi) | 3,000 |
 | `mainokset.txt` | Domain | Ad and tracking domains (StevenBlack, Disconnect, Cameleon) | 27,600 |
 | `windows_spy.txt` | Domain | Windows telemetry, extra services and Windows Update (WindowsSpyBlocker) | 430 |
-| `windows_spy_ip.txt` | IP | Windows telemetry IP addresses (WindowsSpyBlocker) | 10 |
+| `windows_spy_ip.txt` | IPv4 | Windows telemetry IP addresses (WindowsSpyBlocker) | 10 |
 | `host.txt` | Domain | Malware, scams and spam (StevenBlack) | 18,600 |
 
 The file names are Finnish: *suomi_mainokset* means Finnish ads, *laitteet*
@@ -222,13 +224,14 @@ https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/ho
 ### Setup
 
 1. **Networks → Network Lists → Create New**
-2. Type: **Domain**, or **IP** for `windows_spy_ip.txt`
+2. Type: **Domain**, or **IPv4** for `windows_spy_ip.txt`
 3. Source: **Dynamic**, with a URL from the list above
 4. Refresh interval: **24 h**
 5. Create a firewall policy that blocks traffic to the list:
-   **Settings → Policy Table → Create New Policy**, Action **Reject**, Source Zone
-   **Internal**, Destination Zone **External**, with the list as the destination.
-   In Network 10 the path is Settings → Policy Engine → Policy Table.
+   **Settings → Policy Engine → Policy Table → Create New Policy**, Action
+   **Reject**, Source Zone **Internal**, Destination Zone **External**, with the
+   list as the destination. Reject tells the browser right away that the
+   connection is blocked, so the page does not wait for the ads.
 
 ### Allowing a site (allowlist)
 
@@ -242,13 +245,14 @@ to bottom, and the first matching policy wins. The example allows kernel.org.
    * Source: entered by hand (not Dynamic)
    * Domains: `kernel.org` and `www.kernel.org`. Add each name separately,
      because the parent domain may not cover its subdomains.
-2. **Create the allow policy.** Settings → Policy Table → Create New Policy:
+2. **Create the allow policy.** Settings → Policy Engine → Policy Table → Create
+   New Policy:
    * Name: `Allow allowlist`
    * Action: **Allow**
    * Source Zone: **Internal**
    * Destination Zone: **External**, with the list `Allowlist` as the destination
 3. **Create the block policies** if you don't have them yet: the same settings,
-   but Action **Block** and a blocklist as the destination, for example
+   but Action **Reject** and a blocklist as the destination, for example
    `mainokset`.
 4. **Order the policies.** Open the Zones view and select the zone pair
    Internal → External. Choose **Reorder** below the policy list and move
@@ -259,8 +263,8 @@ The finished order for Internal → External:
 | # | Policy | Action | Destination |
 |---|---|---|---|
 | 1 | Allow allowlist | Allow | `Allowlist` |
-| 2 | Block ads | Block | `mainokset` |
-| 3 | Block device tracking | Block | `laitteet` |
+| 2 | Block ads | Reject | `mainokset` |
+| 3 | Block device tracking | Reject | `laitteet` |
 | … | Allow All Traffic (default) | Allow | any |
 
 Notes:
@@ -334,10 +338,10 @@ the change is on master, the UniFi lists are rebuilt automatically.
 
 ## Licenses
 
-Each list follows the licenses of its sources. `laitteet.txt` is under GPL-3.0,
-and `mainokset.txt` and `suomi_mainokset.txt` contain data that may only be used
-non-commercially. The source licenses and details (in Finnish) are in
-[`LICENSES/`](LICENSES/README.md).
+Each list follows the licenses of its sources. `laitteet.txt` is under GPL-3.0.
+`mainokset.txt` and `suomi_mainokset.txt` contain GPL-3.0 data from Disconnect
+and data that may only be used non-commercially. The source licenses and
+details (in Finnish) are in [`LICENSES/`](LICENSES/README.md).
 
 ## Privacy
 
