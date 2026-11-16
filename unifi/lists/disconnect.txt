@@ -18,7 +18,6 @@ ad-center.com
 ad-tech.com
 ad.980x.com
 ad.f1cd.ru
-ad.jamster.co.uk
 ad.mgd.de
 ad.onad.eu
 ad.playground.ru
@@ -108,7 +107,6 @@ banner.webmersion.com
 bannercommunity.de
 bannerflow.com
 bannerhost.com
-bannerlandia.com.ar
 bannermarkt.nl
 banners.apnuk.com
 bannertesting.com
@@ -121,7 +119,6 @@ bitads.net
 blast4traffic.com
 blogrush.com
 blutrumpet.com
-boom.ro
 branovate.com
 brickandmobile.com
 british-banners.com
@@ -131,7 +128,6 @@ buzzonclick.com
 bvalphaserver.com
 callfire.com
 callloop.com
-cashlayer.com
 casinotreasure.com
 cbmall.com
 cbx.net
@@ -150,7 +146,6 @@ clicmanager.fr
 cmpstar.com
 comboapp.com
 comclick.com
-contaxe.de
 cpmaffiliation.com
 cpxadroit.com
 crakmedia.com
@@ -160,7 +155,6 @@ creafi.com
 crispads.com
 crispmedia.com
 crispwireless.com
-ctnetwork.hu
 cubics.com
 deanmediagroup.com
 direct-xxx-access.com
@@ -204,7 +198,6 @@ gtsmobi.com
 guppymedia.com
 heias.com
 heywire.com
-hidden.gogoceleb.com
 hit.bg
 hitcents.com
 hitexchange.net
@@ -260,7 +253,6 @@ media-servers.net
 mediaarmor.com
 mediabrix.com
 mediashakers.com
-megago.com
 meltdsp.com
 metanetwork.net
 metaresolver.com
@@ -350,14 +342,12 @@ rtbidder.net
 sageanalyst.net
 scientiamobile.com
 searchfeast.com
-senddroid.com
 sensenetworks.com
 service1.adten.de
 sessionm.com
 sexadvertentiesite.nl
 sexystat.com
 sezwho.com
-siccash.com
 signalhq.com
 simpletexting.com
 sitemerkezi.net
@@ -369,12 +359,10 @@ spywarenuker.com
 stats.suite101.com
 strikead.com
 suptullog.com
-switchads.com
 takru.com
 tapgen.com
 tapsense.com
 tatango.com
-thebugs.ws
 therichkids.com
 thinknear.com
 todacell.com
@@ -413,11 +401,11 @@ warp.ly
 wda.com
 webmasterplan.com
 webmasterplan.de
+webstats4u.com
 whispa.com
 wmirk.ru
 wtlive.com
 www.banner-link.com.br
-x-traceur.com
 xclicks.net
 xius.com
 xrea.com

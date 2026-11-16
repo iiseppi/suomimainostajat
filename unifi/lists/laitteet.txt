@@ -33,8 +33,6 @@ aax-dtb-web-bids-geo.amazon-adsystem.com
 aax-dtb-web-geo-aax.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.com
-aax-dtb-web.amazon-adsystem.amazon.com
-aax-dtb-web.amazon-adsystem.com
 aax-eu-rtb-adx.amazon-adsystem.com
 aax-eu-rtb.amazon-adsystem.com
 aax-eu.amazon-adsystem.com
@@ -540,7 +538,6 @@ bo-rdx2-lgtvsdp-com.aws-prd.net
 books-analytics-events.apple.com
 bossadmin.pandora.xiaomi.com
 box.pandora.xiaomi.com
-bpu.samsungelectronics.com
 br-ad-lgsmartad-com.aws-prd.net
 br-info-lgsmartad-com.aws-prd.net
 br-miuilog.sms.intl.xiaomi.com
@@ -586,8 +583,6 @@ bz-ad-lgsmartad-com.aws-prd.net
 bz-info-lgsmartad-com.aws-prd.net
 bz-rdx2-lgtvsdp-com.aws-prd.net
 c-bingapis-com.dual-a-0034.a-msedge.net
-c-ring-fallback.msedge.net
-c-ring.msedge.net
 c.amazon-adsystem.com
 c.ar.msn.com
 c.at.msn.com
@@ -1152,7 +1147,6 @@ g-api-ru.ekatox.com
 g00.msn.com
 ga-ad-lgsmartad-com.aws-prd.net
 ga-info-lgsmartad-com.aws-prd.net
-gallery.cdn.pandora.xiaomi.com
 gamebox.sec.intl.miui.com
 gamebox.sec.miui.com
 gateway.bingviz.microsoftapp.net
@@ -2437,7 +2431,6 @@ samsungads.adsmeasurement.com
 samsungads.com
 samsungafrica.demdex.net
 samsungafrica.tt.omtrdc.net
-samsungallstore.com
 samsungau.api.useinsider.com
 samsungau.demdex.net
 samsungbenelux.tt.omtrdc.net
