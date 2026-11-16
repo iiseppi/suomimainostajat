@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T13:50:28Z",
+  "updated": "2026-11-16T06:08:37Z",
   "lists": {
     "windows_spy.txt": {
       "entries": 434,
@@ -20,13 +20,13 @@
       }
     },
     "mainokset.txt": {
-      "entries": 28603,
-      "source_entries": 46493,
+      "entries": 28386,
+      "source_entries": 46517,
       "removed": {
-        "no_answer": 2595,
-        "nodata": 1577,
-        "nxdomain": 12522,
-        "servfail": 1061,
+        "no_answer": 2867,
+        "nodata": 1590,
+        "nxdomain": 12484,
+        "servfail": 1055,
         "sinkhole": 135
       }
     },
@@ -40,25 +40,25 @@
       }
     },
     "laitteet.txt": {
-      "entries": 3025,
+      "entries": 3023,
       "source_entries": 3499,
       "removed": {
-        "no_answer": 213,
+        "no_answer": 214,
         "nodata": 132,
-        "nxdomain": 87,
+        "nxdomain": 88,
         "servfail": 10,
         "sinkhole": 32
       }
     },
     "host.txt": {
-      "entries": 19499,
-      "source_entries": 42769,
+      "entries": 19404,
+      "source_entries": 41550,
       "removed": {
-        "no_answer": 2088,
-        "nodata": 846,
-        "nxdomain": 16903,
-        "servfail": 3399,
-        "sinkhole": 34
+        "no_answer": 1813,
+        "nodata": 834,
+        "nxdomain": 16329,
+        "servfail": 3139,
+        "sinkhole": 31
       }
     },
     "ip.txt": {
