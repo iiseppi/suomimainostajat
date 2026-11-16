@@ -13,7 +13,8 @@ lainkaan. Muutokset tallentuvat `unifi/lists/`-kansioon.
 |---|---|---|
 | `unifi/lists/windows_spy.txt` | Domain | WindowsSpyBlocker: spy, extra, update |
 | `unifi/lists/windows_spy_ip.txt` | IPv4 | WindowsSpyBlocker: firewall/spy |
-| `unifi/lists/mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlackin mainososiot, Disconnect, Cameleon) |
+| `unifi/lists/mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlackin mainososiot, Cameleon) |
+| `unifi/lists/disconnect.txt` | Domain | Disconnectin mainoslistan domainit, joita mikään muu lähde ei listaa. GPL-3.0, katso [`LICENSES/`](../LICENSES/README.md) |
 | `unifi/lists/suomi_mainokset.txt` | Domain | suomimainostajat-lista ja muiden mainoslistojen `.fi`-domainit (paitsi ei-suomalaiset kuten simpli.fi) |
 | `unifi/lists/laitteet.txt` | Domain | HaGeZin native tracker -listat: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft. GPL-3.0, katso [`LICENSES/`](../LICENSES/README.md) |
 | `unifi/lists/host.txt` | Domain | Muut: haittaohjelmat, huijaukset, roskaposti (StevenBlackin muut osiot) |
@@ -21,7 +22,10 @@ lainkaan. Muutokset tallentuvat `unifi/lists/`-kansioon.
 
 Jokainen merkintä on vain yhdessä listassa. Etusija on tässä järjestyksessä:
 windows spy → suomi mainokset → laitteet → mainokset → host/ip.
-HaGeZin domainit ovat vain `laitteet.txt`:ssä. Listojen lisenssit ovat kansiossa
+HaGeZin domainit ovat vain `laitteet.txt`:ssä. Mainosdomainit, jotka ovat vain
+Disconnectin listalla, menevät `disconnect.txt`:hen eivätkä `mainokset.txt`:hen
+tai `suomi_mainokset.txt`:hen. Jos domain on myös jossain muussa mainoslähteessä,
+se on sen mukaisella listalla. Listojen lisenssit ovat kansiossa
 [`LICENSES/`](../LICENSES/README.md).
 
 Ajon tilastot (kuinka moni merkintä jäi ja kuinka moni poistettiin ja miksi) ovat

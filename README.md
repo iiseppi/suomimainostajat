@@ -16,7 +16,8 @@ Listat on tehty UniFi Networkin (11.0.81+ / UniFi OS 6.0.10+) dynaamisiksi
 |---|---|---|---|
 | `suomi_mainokset.txt` | Domain | Suomalaiset mainos- ja seurantadomainit (`list.txt` ja muiden listojen `.fi`-domainit) | 20 |
 | `laitteet.txt` | Domain | Laitteiden ja käyttöjärjestelmien omat seurantapalvelimet: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft (HaGeZi) | 3 000 |
-| `mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlack, Disconnect, Cameleon) | 27 600 |
+| `mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlack, Cameleon) | 27 600 |
+| `disconnect.txt` | Domain | Mainosdomainit, jotka ovat vain Disconnectin listalla. Erillään GPL-3.0-lisenssin takia. | 430 |
 | `windows_spy.txt` | Domain | Windowsin telemetria, lisäpalvelut ja Windows Update (WindowsSpyBlocker) | 430 |
 | `windows_spy_ip.txt` | IPv4 | Windowsin telemetrian IP-osoitteet (WindowsSpyBlocker) | 10 |
 | `host.txt` | Domain | Haittaohjelmat, huijaukset ja roskaposti (StevenBlack) | 18 600 |
@@ -31,6 +32,7 @@ Listojen osoitteet UniFia varten:
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/suomi_mainokset.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/laitteet.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/mainokset.txt
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/disconnect.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/windows_spy.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/windows_spy_ip.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/host.txt
@@ -154,9 +156,9 @@ Kun muutos on masterissa, UniFi-listat rakentuvat uudelleen automaattisesti.
 
 ## Lisenssit
 
-Jokainen lista noudattaa lähteidensä lisenssejä. `laitteet.txt` on GPL-3.0:n
-alainen. `mainokset.txt` ja `suomi_mainokset.txt` sisältävät Disconnectin
-GPL-3.0-dataa sekä dataa, jota saa käyttää vain ei-kaupallisesti. Lähteiden
+Jokainen lista noudattaa lähteidensä lisenssejä. `laitteet.txt` ja
+`disconnect.txt` ovat GPL-3.0:n alaisia. `mainokset.txt` ja `suomi_mainokset.txt`
+sisältävät dataa, jota saa käyttää vain ei-kaupallisesti. Lähteiden
 lisenssit ja tarkemmat tiedot ovat kansiossa [`LICENSES/`](LICENSES/README.md).
 
 ## Tietosuoja
@@ -198,7 +200,8 @@ The lists are made for UniFi Network (11.0.81+ / UniFi OS 6.0.10+) dynamic
 |---|---|---|---|
 | `suomi_mainokset.txt` | Domain | Finnish ad and tracking domains (`list.txt` and `.fi` domains from the other lists) | 20 |
 | `laitteet.txt` | Domain | Trackers built into devices and operating systems: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft (HaGeZi) | 3,000 |
-| `mainokset.txt` | Domain | Ad and tracking domains (StevenBlack, Disconnect, Cameleon) | 27,600 |
+| `mainokset.txt` | Domain | Ad and tracking domains (StevenBlack, Cameleon) | 27,600 |
+| `disconnect.txt` | Domain | Ad domains that only Disconnect lists. Kept apart because of its GPL-3.0 license. | 430 |
 | `windows_spy.txt` | Domain | Windows telemetry, extra services and Windows Update (WindowsSpyBlocker) | 430 |
 | `windows_spy_ip.txt` | IPv4 | Windows telemetry IP addresses (WindowsSpyBlocker) | 10 |
 | `host.txt` | Domain | Malware, scams and spam (StevenBlack) | 18,600 |
@@ -216,6 +219,7 @@ List URLs for UniFi:
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/suomi_mainokset.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/laitteet.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/mainokset.txt
+https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/disconnect.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/windows_spy.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/windows_spy_ip.txt
 https://raw.githubusercontent.com/iiseppi/suomimainostajat/master/unifi/lists/host.txt
@@ -338,9 +342,9 @@ the change is on master, the UniFi lists are rebuilt automatically.
 
 ## Licenses
 
-Each list follows the licenses of its sources. `laitteet.txt` is under GPL-3.0.
-`mainokset.txt` and `suomi_mainokset.txt` contain GPL-3.0 data from Disconnect
-and data that may only be used non-commercially. The source licenses and
+Each list follows the licenses of its sources. `laitteet.txt` and
+`disconnect.txt` are under GPL-3.0. `mainokset.txt` and `suomi_mainokset.txt`
+contain data that may only be used non-commercially. The source licenses and
 details (in Finnish) are in [`LICENSES/`](LICENSES/README.md).
 
 ## Privacy

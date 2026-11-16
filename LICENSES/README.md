@@ -10,15 +10,17 @@ tiedostot ovat lähteiden omia lisenssitekstejä sellaisinaan.
 |---|---|---|
 | `unifi/lists/laitteet.txt` | HaGeZi | GPL-3.0 |
 | `unifi/lists/windows_spy.txt`, `windows_spy_ip.txt` | WindowsSpyBlocker | MIT |
-| `unifi/lists/mainokset.txt` | StevenBlackin mainososiot, Disconnect, Cameleon | GPL-3.0, MIT, CC BY 3.0, CC BY 4.0, CC BY-NC-SA 4.0, ei-kaupallinen käyttö (ks. alla) |
+| `unifi/lists/disconnect.txt` | Disconnect | GPL-3.0 |
+| `unifi/lists/mainokset.txt` | StevenBlackin mainososiot, Cameleon | MIT, CC BY 3.0, CC BY 4.0, CC BY-NC-SA 4.0, ei-kaupallinen käyttö (ks. alla) |
 | `unifi/lists/host.txt` | StevenBlackin muut osiot | MIT, CC BY-SA 4.0, CC0 1.0 (ks. alla) |
 | `unifi/lists/suomi_mainokset.txt` | `list.txt` ja muiden mainoslähteiden `.fi`-domainit | kuten `mainokset.txt` |
 | `unifi/lists/ip.txt` | (tyhjä) | – |
 
-HaGeZin domainit ovat vain `laitteet.txt`:ssä. `mainokset.txt` ja
-`suomi_mainokset.txt` sisältävät kuitenkin sekä Disconnectin GPL-3.0-dataa että
-MVPS:n CC BY-NC-SA 4.0 -dataa, eivätkä nämä lisenssit sovi yhteen: GPL-3.0 ei
-salli lisärajoituksia, kuten ei-kaupallisen käytön ehtoa.
+GPL-3.0 ei salli lisärajoituksia, kuten ei-kaupallisen käytön ehtoa, joten
+GPL-3.0-dataa ei sekoiteta samaan listaan CC BY-NC-SA 4.0 -datan kanssa. HaGeZin
+domainit ovat vain `laitteet.txt`:ssä. Domainit, jotka ovat vain Disconnectin
+listalla, ovat vain `disconnect.txt`:ssä. Jos domain on myös jossain muussa
+lähteessä, se on sen lähteen mukaisella listalla.
 
 ## Lähteet
 
@@ -54,10 +56,8 @@ ovat [StevenBlackin README:ssä](https://github.com/StevenBlack/hosts#sources-of
 
 ## Mitä tämä tarkoittaa
 
-* `laitteet.txt`:tä saa jakaa ja muokata vain GPL-3.0:n ehdoilla, ja
-  lisenssiteksti on pidettävä mukana.
+* `laitteet.txt`:tä ja `disconnect.txt`:tä saa jakaa ja muokata vain GPL-3.0:n
+  ehdoilla, ja lisenssiteksti on pidettävä mukana.
 * `mainokset.txt` ja `suomi_mainokset.txt` sisältävät MVPS:n ja
   someonewhocaresin dataa. Niiden ehdot sallivat vain ei-kaupallisen käytön.
-* `mainokset.txt` ja `suomi_mainokset.txt` sisältävät myös Disconnectin
-  GPL-3.0-dataa.
 * Kaikki listat tulevat ilman takuuta.

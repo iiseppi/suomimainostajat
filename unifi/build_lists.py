@@ -6,6 +6,8 @@ that no longer resolve and IPs that do not answer at all, and writes plain
 lists (one entry per line, no comments) that UniFi can load from a URL.
 
 Category priority: windows_spy > suomi_mainokset > laitteet > mainokset > host / ip
+Ad entries that only Disconnect lists go to disconnect instead of mainokset /
+suomi_mainokset (license separation, see GPL_AD_SOURCES).
 
 Only the Python standard library is used.
 """
@@ -57,6 +59,11 @@ SOURCES += [(f"hagezi_{n}", "plain", f"{HAGEZI}/native.{n}-onlydomains.txt") for
 SB_AD_SECTIONS = {"adaway.org", "add.2o7Net", "hostsVN", "mvps.org", "someonewhocares.org",
                   "tiuxo", "UncheckyAds", "yoyo.org"}
 AD_SOURCES = {"cameleon", "disconnect_ad"}
+# Disconnect's ad list is GPL-3.0 (see the header of simple_ad.txt). mainokset.txt
+# and suomi_mainokset.txt contain CC BY-NC-SA 4.0 and other non-commercial data,
+# which GPL-3.0 does not allow to be combined with. So ad entries that come only
+# from these sources go to their own list (disconnect.txt).
+GPL_AD_SOURCES = {"disconnect_ad"}
 # .fi domains of companies that are not Finnish (domain hacks like simpli.fi)
 NOT_FINNISH_FI = ("simpli.fi",)
 
@@ -78,6 +85,7 @@ OUTPUTS = {
     "windows_spy": ("windows_spy.txt", "domain"),
     "windows_spy_ip": ("windows_spy_ip.txt", "ip"),
     "mainokset": ("mainokset.txt", "domain"),
+    "disconnect": ("disconnect.txt", "domain"),
     "suomi_mainokset": ("suomi_mainokset.txt", "domain"),
     "laitteet": ("laitteet.txt", "domain"),
     "host": ("host.txt", "domain"),
@@ -183,12 +191,14 @@ def categorize(kind, value, tags):
         return "suomi_mainokset"
     if any(t.startswith("hagezi_") for t in tags):
         return "ip" if kind == "ip" else "laitteet"
-    is_ad = any(t in AD_SOURCES or (t.startswith("sb:") and t[3:] in SB_AD_SECTIONS) for t in tags)
-    if not is_ad and kind == "domain" and "sb:StevenBlack" in tags and AD_KEYWORDS.search(value):
-        is_ad = True
-    if is_ad:
+    ad_tags = {t for t in tags if t in AD_SOURCES or (t.startswith("sb:") and t[3:] in SB_AD_SECTIONS)}
+    if kind == "domain" and "sb:StevenBlack" in tags and AD_KEYWORDS.search(value):
+        ad_tags.add("sb:StevenBlack")
+    if ad_tags:
         if kind == "ip":
             return "ip"
+        if ad_tags <= GPL_AD_SOURCES:
+            return "disconnect"
         finnish = value.endswith(".fi") and not any(
             value == d or value.endswith("." + d) for d in NOT_FINNISH_FI)
         return "suomi_mainokset" if finnish else "mainokset"
