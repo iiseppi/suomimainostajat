@@ -16,11 +16,11 @@ Listat on tehty UniFi Networkin (11.0.81+ / UniFi OS 6.0.10+) dynaamisiksi
 |---|---|---|---|
 | `suomi_mainokset.txt` | Domain | Suomalaiset mainos- ja seurantadomainit (`list.txt` ja muiden listojen `.fi`-domainit) | 20 |
 | `laitteet.txt` | Domain | Laitteiden ja käyttöjärjestelmien omat seurantapalvelimet: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft (HaGeZi) | 3 000 |
-| `mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlack, Cameleon) | 27 600 |
-| `disconnect.txt` | Domain | Mainosdomainit, jotka ovat vain Disconnectin listalla. Erillään GPL-3.0-lisenssin takia. | 430 |
+| `mainokset.txt` | Domain | Mainos- ja seurantadomainit (StevenBlack, Cameleon) | 27 100 |
+| `disconnect.txt` | Domain | Mainosdomainit, jotka ovat vain Disconnectin listalla. Erillään GPL-3.0-lisenssin takia. | 420 |
 | `windows_spy.txt` | Domain | Windowsin telemetria, lisäpalvelut ja Windows Update (WindowsSpyBlocker) | 430 |
 | `windows_spy_ip.txt` | IPv4 | Windowsin telemetrian IP-osoitteet (WindowsSpyBlocker) | 10 |
-| `host.txt` | Domain | Haittaohjelmat, huijaukset ja roskaposti (StevenBlack) | 18 600 |
+| `host.txt` | Domain | Haittaohjelmat, huijaukset ja roskaposti (StevenBlack) | 18 500 |
 
 Koot ovat marraskuulta 2026. Ajantasaiset luvut ovat tiedostossa
 [`unifi/lists/stats.json`](unifi/lists/stats.json). Lisäksi on `ip.txt` muille
@@ -200,11 +200,11 @@ The lists are made for UniFi Network (11.0.81+ / UniFi OS 6.0.10+) dynamic
 |---|---|---|---|
 | `suomi_mainokset.txt` | Domain | Finnish ad and tracking domains (`list.txt` and `.fi` domains from the other lists) | 20 |
 | `laitteet.txt` | Domain | Trackers built into devices and operating systems: LG webOS, Samsung, Amazon, Roku, Apple, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok, Microsoft (HaGeZi) | 3,000 |
-| `mainokset.txt` | Domain | Ad and tracking domains (StevenBlack, Cameleon) | 27,600 |
-| `disconnect.txt` | Domain | Ad domains that only Disconnect lists. Kept apart because of its GPL-3.0 license. | 430 |
+| `mainokset.txt` | Domain | Ad and tracking domains (StevenBlack, Cameleon) | 27,100 |
+| `disconnect.txt` | Domain | Ad domains that only Disconnect lists. Kept apart because of its GPL-3.0 license. | 420 |
 | `windows_spy.txt` | Domain | Windows telemetry, extra services and Windows Update (WindowsSpyBlocker) | 430 |
 | `windows_spy_ip.txt` | IPv4 | Windows telemetry IP addresses (WindowsSpyBlocker) | 10 |
-| `host.txt` | Domain | Malware, scams and spam (StevenBlack) | 18,600 |
+| `host.txt` | Domain | Malware, scams and spam (StevenBlack) | 18,500 |
 
 The file names are Finnish: *suomi_mainokset* means Finnish ads, *laitteet*
 devices and *mainokset* ads.

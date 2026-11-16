@@ -23,7 +23,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
+      # Build from the latest master, not from the commit that started the run:
+      # a run that waited in the concurrency queue would otherwise miss the
+      # previous run's list commit, and its own commit would conflict with it.
       - uses: actions/checkout@v4
+        with:
+          ref: master
 
       - uses: actions/setup-python@v5
         with:
