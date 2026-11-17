@@ -971,6 +971,7 @@ do-ad-lgsmartad-com.aws-prd.net
 do-info-lgsmartad-com.aws-prd.net
 do-rdx2-lgtvsdp-com.aws-prd.net
 download-samsung.dtignite.com
+dpu.samsungelectronics.com
 dqa-auth.di.atlas.samsung.com
 dra.amazon-adsystem.com
 dragate-br.dc.oppomobile.com
@@ -1147,6 +1148,7 @@ g-api-ru.ekatox.com
 g00.msn.com
 ga-ad-lgsmartad-com.aws-prd.net
 ga-info-lgsmartad-com.aws-prd.net
+gallery.cdn.pandora.xiaomi.com
 gamebox.sec.intl.miui.com
 gamebox.sec.miui.com
 gateway.bingviz.microsoftapp.net
