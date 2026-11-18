@@ -26,7 +26,6 @@ ad.twitchguru.com
 ad2.linxcz.cz
 adbanner.ro
 adblockanalytics.com
-adboost.net
 adbunker.com
 adcell.de
 adcito.com
@@ -87,6 +86,7 @@ affiliate.dtiserv.com
 affiliate.mogs.com
 affiliates.jlist.com
 affiliatetrading.net
+ajouter.net
 allstarmediagroup.com
 app-promo.com
 appier.com
@@ -177,7 +177,6 @@ esellerate.net
 etracker.de
 eu1.madsone.com
 european-toplist.de
-euroranking.de
 evidencecleanergold.com
 extractorandburner.com
 eyereturn.com
@@ -402,7 +401,6 @@ warp.ly
 wda.com
 webmasterplan.com
 webmasterplan.de
-webstats4u.com
 whispa.com
 widgetbucks.com
 wmirk.ru

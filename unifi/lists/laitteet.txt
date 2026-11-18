@@ -33,6 +33,8 @@ aax-dtb-web-bids-geo.amazon-adsystem.com
 aax-dtb-web-geo-aax.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.com
+aax-dtb-web.amazon-adsystem.amazon.com
+aax-dtb-web.amazon-adsystem.com
 aax-eu-rtb-adx.amazon-adsystem.com
 aax-eu-rtb.amazon-adsystem.com
 aax-eu.amazon-adsystem.com
@@ -411,6 +413,7 @@ appstore-trace-h5sdk.vivo.com.cn
 appstore.cdn.pandora.xiaomi.com
 appstore.pandora.xiaomi.com
 appstore.ptmi.gitv.tv
+apu.samsungelectronics.com
 ar-ad-lgsmartad-com.aws-prd.net
 ar-info-lgsmartad-com.aws-prd.net
 ar-rdx2-lgtvsdp-com.aws-prd.net
@@ -622,7 +625,6 @@ c.uk.msn.com
 c.xbox.com
 c.za.msn.com
 c01-info-lgsmartad-com.aws-prd.net
-c3-bgp.pandora.xiaomi.com
 ca-ad-lgsmartad-com.aws-prd.net
 ca-info-lgsmartad-com.aws-prd.net
 ca-rdx2-lgtvsdp-com.aws-prd.net
@@ -971,7 +973,6 @@ do-ad-lgsmartad-com.aws-prd.net
 do-info-lgsmartad-com.aws-prd.net
 do-rdx2-lgtvsdp-com.aws-prd.net
 download-samsung.dtignite.com
-dpu.samsungelectronics.com
 dqa-auth.di.atlas.samsung.com
 dra.amazon-adsystem.com
 dragate-br.dc.oppomobile.com
@@ -1868,7 +1869,6 @@ moa-upload-online-in.coloros.com
 moa-upload-online.coloros.com
 moa-upload-sg.allawnos.com
 moai-dev-samsung.com
-mob.pandora.xiaomi.com
 mobileanalytics.us-east-1.amazonaws.com
 mobileleads.msn.com
 mon-boot.capcutapi.com
