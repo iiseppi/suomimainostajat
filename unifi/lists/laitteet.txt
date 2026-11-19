@@ -413,7 +413,6 @@ appstore-trace-h5sdk.vivo.com.cn
 appstore.cdn.pandora.xiaomi.com
 appstore.pandora.xiaomi.com
 appstore.ptmi.gitv.tv
-apu.samsungelectronics.com
 ar-ad-lgsmartad-com.aws-prd.net
 ar-info-lgsmartad-com.aws-prd.net
 ar-rdx2-lgtvsdp-com.aws-prd.net
@@ -1149,7 +1148,6 @@ g-api-ru.ekatox.com
 g00.msn.com
 ga-ad-lgsmartad-com.aws-prd.net
 ga-info-lgsmartad-com.aws-prd.net
-gallery.cdn.pandora.xiaomi.com
 gamebox.sec.intl.miui.com
 gamebox.sec.miui.com
 gateway.bingviz.microsoftapp.net
@@ -2096,7 +2094,6 @@ paa-reporting-advertising.amazon
 package.box.xiaomi.com
 package.cdn.pandora.xiaomi.com
 pandora.mi.com
-pangolin.snssdk.com
 partiality.itunes-apple.com.akadns.net
 partiality.itunes.apple.com
 partiality.itunes.apple.com.edgekey.net
