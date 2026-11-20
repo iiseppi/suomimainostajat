@@ -55,8 +55,8 @@ ads.faxo.com
 ads.motormedia.nl
 ads.movieflix.com
 ads.pennet.com
+ads.resoom.de
 ads.savannahnow.com
-ads.silverdisc.co.uk
 ads.thewebfreaks.com
 ads.websiteservices.com
 ads1.canoe.ca
@@ -103,6 +103,7 @@ azfront.com
 b-1st.com
 banner.buempliz-online.ch
 banner.webmersion.com
+bannercommunity.de
 bannerflow.com
 bannerhost.com
 bannermarkt.nl
@@ -360,6 +361,7 @@ spywarenuker.com
 stats.suite101.com
 strikead.com
 suptullog.com
+switchads.com
 takru.com
 tapgen.com
 tapsense.com

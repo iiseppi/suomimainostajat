@@ -33,8 +33,6 @@ aax-dtb-web-bids-geo.amazon-adsystem.com
 aax-dtb-web-geo-aax.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.com
-aax-dtb-web.amazon-adsystem.amazon.com
-aax-dtb-web.amazon-adsystem.com
 aax-eu-rtb-adx.amazon-adsystem.com
 aax-eu-rtb.amazon-adsystem.com
 aax-eu.amazon-adsystem.com
@@ -1148,6 +1146,7 @@ g-api-ru.ekatox.com
 g00.msn.com
 ga-ad-lgsmartad-com.aws-prd.net
 ga-info-lgsmartad-com.aws-prd.net
+gallery.cdn.pandora.xiaomi.com
 gamebox.sec.intl.miui.com
 gamebox.sec.miui.com
 gateway.bingviz.microsoftapp.net
@@ -1666,7 +1665,6 @@ logbak.hicloud.com
 logbk.tiktokv.com
 logforward.browser.heytapmobi.com
 logs.appsource.microsoft.com
-logserver.nzxcloud.cn
 logservice-dra.platform.hicloud.com
 logservice-dre.platform.dbankcloud.cn
 logservice-dre.platform.hicloud.com
@@ -2094,6 +2092,7 @@ paa-reporting-advertising.amazon
 package.box.xiaomi.com
 package.cdn.pandora.xiaomi.com
 pandora.mi.com
+pangolin.snssdk.com
 partiality.itunes-apple.com.akadns.net
 partiality.itunes.apple.com
 partiality.itunes.apple.com.edgekey.net
