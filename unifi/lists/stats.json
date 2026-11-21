@@ -1,40 +1,40 @@
 {
-  "updated": "2026-11-20T10:44:42Z",
+  "updated": "2026-11-21T10:25:25Z",
   "lists": {
     "windows_spy.txt": {
       "entries": 434,
       "source_entries": 1283,
       "removed": {
-        "no_answer": 33,
+        "no_answer": 32,
         "nodata": 30,
-        "nxdomain": 683,
+        "nxdomain": 684,
         "servfail": 101,
         "sinkhole": 2
       }
     },
     "windows_spy_ip.txt": {
-      "entries": 11,
+      "entries": 10,
       "source_entries": 167,
       "removed": {
-        "no_answer": 156
+        "no_answer": 157
       }
     },
     "mainokset.txt": {
-      "entries": 27133,
-      "source_entries": 45603,
+      "entries": 28144,
+      "source_entries": 45606,
       "removed": {
-        "no_answer": 3670,
+        "no_answer": 2648,
         "nodata": 1551,
-        "nxdomain": 12177,
-        "servfail": 977,
+        "nxdomain": 12183,
+        "servfail": 985,
         "sinkhole": 95
       }
     },
     "disconnect.txt": {
-      "entries": 423,
+      "entries": 429,
       "source_entries": 914,
       "removed": {
-        "no_answer": 29,
+        "no_answer": 23,
         "nodata": 46,
         "nxdomain": 350,
         "servfail": 65,
@@ -42,34 +42,34 @@
       }
     },
     "suomi_mainokset.txt": {
-      "entries": 22,
+      "entries": 24,
       "source_entries": 51,
       "removed": {
-        "no_answer": 9,
+        "no_answer": 7,
         "nodata": 2,
         "nxdomain": 18
       }
     },
     "laitteet.txt": {
-      "entries": 3018,
-      "source_entries": 3499,
+      "entries": 3027,
+      "source_entries": 3504,
       "removed": {
         "no_answer": 218,
-        "nodata": 129,
-        "nxdomain": 93,
-        "servfail": 9,
+        "nodata": 130,
+        "nxdomain": 89,
+        "servfail": 8,
         "sinkhole": 32
       }
     },
     "host.txt": {
-      "entries": 17047,
+      "entries": 17679,
       "source_entries": 41550,
       "removed": {
-        "no_answer": 2626,
-        "nodata": 778,
-        "nxdomain": 17742,
+        "no_answer": 1929,
+        "nodata": 798,
+        "nxdomain": 17786,
         "servfail": 3328,
-        "sinkhole": 29
+        "sinkhole": 30
       }
     },
     "ip.txt": {

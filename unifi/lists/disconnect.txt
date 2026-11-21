@@ -18,6 +18,7 @@ ad-center.com
 ad-tech.com
 ad.980x.com
 ad.f1cd.ru
+ad.jamster.co.uk
 ad.mgd.de
 ad.onad.eu
 ad.playground.ru
@@ -106,6 +107,7 @@ banner.webmersion.com
 bannercommunity.de
 bannerflow.com
 bannerhost.com
+bannerlandia.com.ar
 bannermarkt.nl
 banners.apnuk.com
 bannertesting.com
@@ -118,6 +120,7 @@ bitads.net
 blast4traffic.com
 blogrush.com
 blutrumpet.com
+boom.ro
 branovate.com
 brickandmobile.com
 british-banners.com
@@ -127,6 +130,7 @@ buzzonclick.com
 bvalphaserver.com
 callfire.com
 callloop.com
+cashlayer.com
 casinotreasure.com
 cbmall.com
 cbx.net
@@ -138,7 +142,6 @@ citygrid.com
 claria.com
 clashmobile.com
 click.absoluteagency.com
-click2paid.com
 clickhouse.com
 clickthruserver.com
 clicmanager.fr
@@ -199,6 +202,7 @@ gtsmobi.com
 guppymedia.com
 heias.com
 heywire.com
+hidden.gogoceleb.com
 hit.bg
 hitcents.com
 hitexchange.net
@@ -254,6 +258,7 @@ media-servers.net
 mediaarmor.com
 mediabrix.com
 mediashakers.com
+megago.com
 meltdsp.com
 metanetwork.net
 metaresolver.com
@@ -287,7 +292,6 @@ myscreen.com
 namimedia.com
 netcommunities.com
 newbie.com
-newtopsites.com
 nuggad.net
 oewabox.at
 offerfusion.com
@@ -302,7 +306,6 @@ pagerank-submitter.com
 pagerank4you.com
 papayamobile.com
 partage-facile.com
-passion-4.net
 pay-ads.com
 payserve.com
 phizzle.com
@@ -343,6 +346,7 @@ rtbidder.net
 sageanalyst.net
 scientiamobile.com
 searchfeast.com
+senddroid.com
 sensenetworks.com
 service1.adten.de
 sessionm.com
@@ -366,6 +370,7 @@ takru.com
 tapgen.com
 tapsense.com
 tatango.com
+thebugs.ws
 therichkids.com
 thinknear.com
 todacell.com
@@ -410,6 +415,7 @@ widgetbucks.com
 wmirk.ru
 wtlive.com
 www.banner-link.com.br
+x-traceur.com
 xclicks.net
 xius.com
 xrea.com

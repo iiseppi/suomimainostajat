@@ -81,6 +81,7 @@ ad-format-sg.tiktokv.com
 ad-format-ttp2.tiktokv.us
 ad-format-ttp2.us.tiktokv.com
 ad-format.tiktokv.eu
+ad-format.tiktokv.us
 ad-format.us.tiktokv.com
 ad-format16-normal-useastred.tiktokv.eu
 ad-growth-in.heytapmobile.com
@@ -290,6 +291,7 @@ analytics-exp-sg.tiktok.com
 analytics-exp-sg.tiktok.com.edgekey.net
 analytics-exp-ttp2.tiktokw.eu
 analytics-exp-ttp2.tiktokw.eu.edgesuite.net
+analytics-exp.tiktokw.eu
 analytics-exp.us.tiktok.com
 analytics-exp.us.tiktok.com.edgesuite.net
 analytics-exp16-normal-useastred.tiktokw.eu
@@ -344,7 +346,6 @@ analytics16-normal-useastred.tiktokw.eu.edgesuite.net
 analytics16-normal.tiktok.com
 analytics16-normal.tiktok.com.edgesuite.net
 analyticsehnwe.servicebus.windows.net
-analyticsiot-prod-mobileapps-ehn.servicebus.windows.net
 analyticspixel.microsoft.com
 ao-ad-lgsmartad-com.aws-prd.net
 ao-info-lgsmartad-com.aws-prd.net
@@ -546,6 +547,7 @@ br-rdx2-lgtvsdp-com.aws-prd.net
 br.ekatox.com
 br.tv.global.mi.com
 brc-visio-telemetry.officeapps.live.com
+browser-api-au.heytapmobile.com
 browser-api-br.heytapmobile.com
 browser-api-fr.heytapmobile.com
 browser-api-gl-01.heytapmobile.com
@@ -583,6 +585,8 @@ bz-ad-lgsmartad-com.aws-prd.net
 bz-info-lgsmartad-com.aws-prd.net
 bz-rdx2-lgtvsdp-com.aws-prd.net
 c-bingapis-com.dual-a-0034.a-msedge.net
+c-ring-fallback.msedge.net
+c-ring.msedge.net
 c.amazon-adsystem.com
 c.ar.msn.com
 c.at.msn.com
@@ -923,7 +927,6 @@ dcintl.push.heytapmobi.com
 ddf.di.atlas.samsung.com
 de-ad-lgsmartad-com.aws-prd.net
 de-gdpr-err-up.vivoglobal.com
-de-gdpr-vcode-api.vivoglobal.com
 de-info-lgsmartad-com.aws-prd.net
 de-rdx2-lgtvsdp-com.aws-prd.net
 de.pandora.xiaomi.com
@@ -1020,7 +1023,6 @@ eu-cota.vivoglobal.com
 eu-domaincfg.vivoglobal.com
 eu-errup.vivoglobal.com
 eu-monitor-stsdk.vivoglobal.com
-eu-nrt-stsdk.vivoglobal.com
 eu-onrt-stsdk.vivoglobal.com
 eu-ort-stsdk.vivoglobal.com
 eu-p.vivoglobal.com
@@ -1034,6 +1036,7 @@ eu-vcode-api.vivoglobal.com
 eu-vcode-od.vivoglobal.com
 eu-vcode-or.vivoglobal.com
 eu7-info-lgsmartad-com.aws-prd.net
+eu7-rdx2-lgtvsdp-com.aws-prd.net
 euc-excel-telemetry.officeapps.live.com
 euc-onenote-telemetry.officeapps.live.com
 euc-powerpoint-telemetry.officeapps.live.com
@@ -1063,6 +1066,7 @@ events-dre-op-hicloud-com-dre.appacc.dbankedge.cn
 events-dre.op.dbankcloud.com
 events-dre.op.hicloud.com
 events-sandbox.data.microsoft.com
+events-sandbox.data.msn.cn
 events-sandbox.data.msn.com
 events.app-performance.music.amazon.dev
 eventservice.trafficmanager.net
@@ -1297,7 +1301,6 @@ iadsdk.apple.com
 iadsdk.apple.com.akadns.net
 iadsdk.apple.com.edgekey.net
 iadworkbench.apple.com
-icmskillevents.trafficmanager.net
 icosa-service-eu.allawnos.com
 icosa-service-fr-01.allawnos.com
 icosa-service-fr-02.allawnos.com
@@ -1393,6 +1396,7 @@ in-pnrt-stsdk.vivoglobal.com
 in-protect-dev.sec.intl.miui.com
 in-prt-stsdk.vivoglobal.com
 in-rdx2-lgtvsdp-com.aws-prd.net
+in-rt-stsdk.vivoglobal.com
 in-third-appstore.vivoglobal.com
 in-timesync.vivoglobal.com
 in-vcode-api.vivoglobal.com
@@ -1523,7 +1527,9 @@ ln-ring.msedge.net
 location-i18n.tiktokv.com
 location-ie.tiktokv.eu
 location-microsoft-com.b-0005.b-msedge.net
+location-ru.tiktokv.com
 location-sg.tiktokv.com
+location-ttp2.tiktokv.eu
 location-ttp2.tiktokv.us
 location-ttp2.tiktokw.eu
 location-ttp2.tiktokw.us
@@ -1558,6 +1564,9 @@ log-dr16-normal-useast1a.tiktokv.com
 log-dr16-normal-useast5.tiktokv.us
 log-dr16-normal-useast8.tiktokv.us
 log-dr16-normal-useastred.tiktokv.eu
+log-dr19-normal-no1a.tiktokv.eu
+log-dr19-normal-useast5.tiktokv.us
+log-dr19-normal-useast8.tiktokv.us
 log-dra.platform.hihonorcloud.com
 log-drcn.platform.hihonorcloud.com
 log-dre.platform.hihonorcloud.com
@@ -1620,7 +1629,6 @@ log19-normal.tiktokv.com
 log22-applog-useast1a.tiktokv.com
 log22-applog-useast2a.tiktokv.com
 log22-normal-alisg.tiktokv.com
-log22-normal-alisg.tiktokv.com.kp45.ru
 log22-normal-useast1a.tiktokv.com
 log22-normal-useast2a.tiktokv.com
 log22-normal-zr-alisg.tiktokv.com
@@ -2064,6 +2072,7 @@ open.snssdk.com
 openapi.vip.ptqy.gitv.tv
 openlocation-drcn-platform-dbankcloud-com-drcn.appacc.dbankedge.cn
 openlocation-drcn.platform.dbankcloud.com
+opex-service-eu-allawna-e3dde.fr-w01.cngw.allawnos.com
 opex-service-eu.allawnos.com
 opex-service-in.allawnos.com
 opex-service-sg.allawnos.com
@@ -2089,7 +2098,6 @@ pa-ad-lgsmartad-com.aws-prd.net
 pa-info-lgsmartad-com.aws-prd.net
 pa-rdx2-lgtvsdp-com.aws-prd.net
 paa-reporting-advertising.amazon
-package.box.xiaomi.com
 package.cdn.pandora.xiaomi.com
 pandora.mi.com
 pangolin.snssdk.com
@@ -2165,6 +2173,7 @@ prod-event-relay-notes-api.v.aaplimg.com
 prod-event-relay-sports-api.v.aaplimg.com
 prod-event-relay-stocks-api.v.aaplimg.com
 prod-event-relay-weather-api.v.aaplimg.com
+prod-event-relay-web-api.v.aaplimg.com
 prod-eventhub-analytics.servicebus.windows.net
 prod-iwork-events.v.aaplimg.com
 prod-news-notification-events.v.aaplimg.com
@@ -2240,6 +2249,7 @@ rs-ad-lgsmartad-com.aws-prd.net
 rs-info-lgsmartad-com.aws-prd.net
 rs-rdx2-lgtvsdp-com.aws-prd.net
 rtc-logger-i18n.tiktokv.com
+rtc-logger-ie.tiktokv.eu
 rtc-logger-ttp2.tiktokv.eu
 rtc-logger-ttp2.tiktokv.us
 rtc-logger-ttp2.us.tiktokv.com
@@ -2250,6 +2260,7 @@ rtc-logger.tiktokv.us
 rtc-logger.us.tiktokv.com
 rtc-logger16-normal-alisg.tiktokv.com
 rtc-logger16-normal-useastred.tiktokv.eu
+rtc-logger16-normal.tiktokv.com
 rtlog-i18n.tiktokv.com
 rtlog-phx.tiktokv.com
 rtlog-ru.tiktokv.com
@@ -2267,7 +2278,6 @@ rtlog16-applog-useast1a.tiktokv.com
 rtlog16-applog-useast2a.tiktokv.com
 rtlog16-applog-useast5.us.tiktokv.com
 rtlog16-normal-alisg.tiktokv.com
-rtlog16-normal-alisg.tiktokv.com.kp45.ru
 rtlog16-normal-ie.tiktokv.eu
 rtlog16-normal-ind.tiktokv.com
 rtlog16-normal-no1a.tiktokv.eu
@@ -2304,7 +2314,6 @@ rtlog19-platform-useast5.us.tiktokv.com
 rtlog22-applog-useast1a.tiktokv.com
 rtlog22-applog-useast2a.tiktokv.com
 rtlog22-normal-alisg.tiktokv.com
-rtlog22-normal-alisg.tiktokv.com.kp45.ru
 rtlog22-normal-useast1a.tiktokv.com
 rtlog22-normal-useast2a.tiktokv.com
 rtlog22-normal-zr-alisg.tiktokv.com
@@ -2429,6 +2438,7 @@ samsungads.adsmeasurement.com
 samsungads.com
 samsungafrica.demdex.net
 samsungafrica.tt.omtrdc.net
+samsungallstore.com
 samsungau.api.useinsider.com
 samsungau.demdex.net
 samsungbenelux.tt.omtrdc.net
@@ -2468,7 +2478,6 @@ samsungnorthamerica.sc.omtrdc.net
 samsungott.sora.yoyi.com.cn
 samsungpakistan.api.useinsider.com
 samsungph.api.useinsider.com
-samsungr.com
 samsungrum.beusable.net
 samsungsamcol.api.useinsider.com
 samsungsamcolepp.api.useinsider.com
@@ -2592,6 +2601,7 @@ sponsored-ads-eu.amazon.nl
 sponsored-ads-eu.amazon.pl
 sponsored-ads-eu.amazon.sa
 sponsored-ads-eu.amazon.se
+sponsored-ads-euc-1.amazon-adsystem.com
 sponsored-ads-fe.amazon-adsystem.com
 sponsored-ads-na.amazon-adsystem.com
 sponsored-ads.amazon.ae
@@ -2656,7 +2666,6 @@ sy-rdx2-lgtvsdp-com.aws-prd.net
 sys.tv.india.xiaomi.com
 sz-ad-lgsmartad-com.aws-prd.net
 sz-info-lgsmartad-com.aws-prd.net
-t-ring-fallback-s2.msedge.net
 t-ring-fallback.msedge.net
 t-ring-fallbacks1.msedge.net
 t-ring-s2.msedge.net
