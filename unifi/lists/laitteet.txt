@@ -585,8 +585,6 @@ bz-ad-lgsmartad-com.aws-prd.net
 bz-info-lgsmartad-com.aws-prd.net
 bz-rdx2-lgtvsdp-com.aws-prd.net
 c-bingapis-com.dual-a-0034.a-msedge.net
-c-ring-fallback.msedge.net
-c-ring.msedge.net
 c.amazon-adsystem.com
 c.ar.msn.com
 c.at.msn.com
@@ -2098,6 +2096,7 @@ pa-ad-lgsmartad-com.aws-prd.net
 pa-info-lgsmartad-com.aws-prd.net
 pa-rdx2-lgtvsdp-com.aws-prd.net
 paa-reporting-advertising.amazon
+package.box.xiaomi.com
 package.cdn.pandora.xiaomi.com
 pandora.mi.com
 pangolin.snssdk.com
@@ -2438,7 +2437,6 @@ samsungads.adsmeasurement.com
 samsungads.com
 samsungafrica.demdex.net
 samsungafrica.tt.omtrdc.net
-samsungallstore.com
 samsungau.api.useinsider.com
 samsungau.demdex.net
 samsungbenelux.tt.omtrdc.net
@@ -2478,6 +2476,7 @@ samsungnorthamerica.sc.omtrdc.net
 samsungott.sora.yoyi.com.cn
 samsungpakistan.api.useinsider.com
 samsungph.api.useinsider.com
+samsungr.com
 samsungrum.beusable.net
 samsungsamcol.api.useinsider.com
 samsungsamcolepp.api.useinsider.com

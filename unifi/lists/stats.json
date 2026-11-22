@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-21T10:25:25Z",
+  "updated": "2026-11-22T10:32:32Z",
   "lists": {
     "windows_spy.txt": {
       "entries": 434,
       "source_entries": 1283,
       "removed": {
-        "no_answer": 32,
+        "no_answer": 33,
         "nodata": 30,
-        "nxdomain": 684,
+        "nxdomain": 683,
         "servfail": 101,
         "sinkhole": 2
       }
@@ -20,41 +20,41 @@
       }
     },
     "mainokset.txt": {
-      "entries": 28144,
+      "entries": 26691,
       "source_entries": 45606,
       "removed": {
-        "no_answer": 2648,
-        "nodata": 1551,
-        "nxdomain": 12183,
-        "servfail": 985,
+        "no_answer": 3828,
+        "nodata": 1555,
+        "nxdomain": 12188,
+        "servfail": 1249,
         "sinkhole": 95
       }
     },
     "disconnect.txt": {
-      "entries": 429,
+      "entries": 413,
       "source_entries": 914,
       "removed": {
-        "no_answer": 23,
+        "no_answer": 36,
         "nodata": 46,
         "nxdomain": 350,
-        "servfail": 65,
+        "servfail": 68,
         "sinkhole": 1
       }
     },
     "suomi_mainokset.txt": {
-      "entries": 24,
+      "entries": 21,
       "source_entries": 51,
       "removed": {
-        "no_answer": 7,
+        "no_answer": 10,
         "nodata": 2,
         "nxdomain": 18
       }
     },
     "laitteet.txt": {
-      "entries": 3027,
+      "entries": 3026,
       "source_entries": 3504,
       "removed": {
-        "no_answer": 218,
+        "no_answer": 219,
         "nodata": 130,
         "nxdomain": 89,
         "servfail": 8,
@@ -62,14 +62,14 @@
       }
     },
     "host.txt": {
-      "entries": 17679,
+      "entries": 16798,
       "source_entries": 41550,
       "removed": {
-        "no_answer": 1929,
-        "nodata": 798,
-        "nxdomain": 17786,
-        "servfail": 3328,
-        "sinkhole": 30
+        "no_answer": 2700,
+        "nodata": 796,
+        "nxdomain": 17802,
+        "servfail": 3425,
+        "sinkhole": 29
       }
     },
     "ip.txt": {

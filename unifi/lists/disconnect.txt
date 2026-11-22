@@ -6,6 +6,7 @@
 5thfinger.com
 600z.com
 777seo.com
+99count.com
 a-counter.kiev.ua
 a.0day.kiev.ua
 a.consumer.net
@@ -18,11 +19,9 @@ ad-center.com
 ad-tech.com
 ad.980x.com
 ad.f1cd.ru
-ad.jamster.co.uk
 ad.mgd.de
 ad.onad.eu
 ad.playground.ru
-ad.top50.to
 ad.twitchguru.com
 ad2.linxcz.cz
 adbanner.ro
@@ -49,11 +48,9 @@ adprofile.net
 adprojekt.pl
 ads-click.com
 ads.allvatar.com
-ads.beenetworks.net
 ads.betfair.com.au
 ads.canoe.ca
 ads.faxo.com
-ads.motormedia.nl
 ads.movieflix.com
 ads.pennet.com
 ads.resoom.de
@@ -88,7 +85,6 @@ affiliate.mogs.com
 affiliates.jlist.com
 affiliatetrading.net
 ajouter.net
-allstarmediagroup.com
 app-promo.com
 appier.com
 appolicious.com
@@ -107,7 +103,6 @@ banner.webmersion.com
 bannercommunity.de
 bannerflow.com
 bannerhost.com
-bannerlandia.com.ar
 bannermarkt.nl
 banners.apnuk.com
 bannertesting.com
@@ -120,7 +115,6 @@ bitads.net
 blast4traffic.com
 blogrush.com
 blutrumpet.com
-boom.ro
 branovate.com
 brickandmobile.com
 british-banners.com
@@ -130,7 +124,6 @@ buzzonclick.com
 bvalphaserver.com
 callfire.com
 callloop.com
-cashlayer.com
 casinotreasure.com
 cbmall.com
 cbx.net
@@ -142,13 +135,13 @@ citygrid.com
 claria.com
 clashmobile.com
 click.absoluteagency.com
+click2paid.com
 clickhouse.com
 clickthruserver.com
 clicmanager.fr
 cmpstar.com
 comboapp.com
 comclick.com
-contaxe.de
 cpmaffiliation.com
 cpxadroit.com
 crakmedia.com
@@ -158,7 +151,6 @@ creafi.com
 crispads.com
 crispmedia.com
 crispwireless.com
-ctnetwork.hu
 cubics.com
 deanmediagroup.com
 direct-xxx-access.com
@@ -202,7 +194,6 @@ gtsmobi.com
 guppymedia.com
 heias.com
 heywire.com
-hidden.gogoceleb.com
 hit.bg
 hitcents.com
 hitexchange.net
@@ -258,7 +249,6 @@ media-servers.net
 mediaarmor.com
 mediabrix.com
 mediashakers.com
-megago.com
 meltdsp.com
 metanetwork.net
 metaresolver.com
@@ -271,7 +261,6 @@ misstrends.com
 mmedia.com
 mobday.com
 mobgold.com
-mobhero.com
 mobilda.com
 mobile-ent.biz
 mobileactive.com
@@ -290,8 +279,8 @@ moversa.com
 mypagerank.ru
 myscreen.com
 namimedia.com
-netcommunities.com
 newbie.com
+newtopsites.com
 nuggad.net
 oewabox.at
 offerfusion.com
@@ -306,6 +295,7 @@ pagerank-submitter.com
 pagerank4you.com
 papayamobile.com
 partage-facile.com
+passion-4.net
 pay-ads.com
 payserve.com
 phizzle.com
@@ -313,7 +303,6 @@ phonearena.com
 picadmedia.com
 placeplay.com
 planetactive.com
-plethoramobile.com
 pontiflex.com
 potenza.cz
 primaryads.com
@@ -328,7 +317,6 @@ quigo.com
 rank-master.com
 ranking-liste.de
 re-directme.com
-readserver.net
 realcastmedia.com
 realteencash.com
 reduxmediagroup.com
@@ -346,14 +334,12 @@ rtbidder.net
 sageanalyst.net
 scientiamobile.com
 searchfeast.com
-senddroid.com
 sensenetworks.com
 service1.adten.de
 sessionm.com
 sexadvertentiesite.nl
 sexystat.com
 sezwho.com
-siccash.com
 signalhq.com
 simpletexting.com
 sitemerkezi.net
@@ -370,7 +356,6 @@ takru.com
 tapgen.com
 tapsense.com
 tatango.com
-thebugs.ws
 therichkids.com
 thinknear.com
 todacell.com
@@ -415,7 +400,6 @@ widgetbucks.com
 wmirk.ru
 wtlive.com
 www.banner-link.com.br
-x-traceur.com
 xclicks.net
 xius.com
 xrea.com
