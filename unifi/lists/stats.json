@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T10:32:32Z",
+  "updated": "2026-11-23T11:31:02Z",
   "lists": {
     "windows_spy.txt": {
       "entries": 434,
@@ -20,41 +20,41 @@
       }
     },
     "mainokset.txt": {
-      "entries": 26691,
+      "entries": 26742,
       "source_entries": 45606,
       "removed": {
-        "no_answer": 3828,
-        "nodata": 1555,
-        "nxdomain": 12188,
-        "servfail": 1249,
-        "sinkhole": 95
+        "no_answer": 3725,
+        "nodata": 1551,
+        "nxdomain": 12259,
+        "servfail": 1235,
+        "sinkhole": 94
       }
     },
     "disconnect.txt": {
-      "entries": 413,
+      "entries": 418,
       "source_entries": 914,
       "removed": {
-        "no_answer": 36,
+        "no_answer": 33,
         "nodata": 46,
         "nxdomain": 350,
-        "servfail": 68,
+        "servfail": 66,
         "sinkhole": 1
       }
     },
     "suomi_mainokset.txt": {
-      "entries": 21,
+      "entries": 22,
       "source_entries": 51,
       "removed": {
-        "no_answer": 10,
+        "no_answer": 9,
         "nodata": 2,
         "nxdomain": 18
       }
     },
     "laitteet.txt": {
-      "entries": 3026,
+      "entries": 3027,
       "source_entries": 3504,
       "removed": {
-        "no_answer": 219,
+        "no_answer": 218,
         "nodata": 130,
         "nxdomain": 89,
         "servfail": 8,
@@ -62,14 +62,14 @@
       }
     },
     "host.txt": {
-      "entries": 16798,
+      "entries": 16785,
       "source_entries": 41550,
       "removed": {
-        "no_answer": 2700,
+        "no_answer": 2661,
         "nodata": 796,
-        "nxdomain": 17802,
-        "servfail": 3425,
-        "sinkhole": 29
+        "nxdomain": 17815,
+        "servfail": 3463,
+        "sinkhole": 30
       }
     },
     "ip.txt": {

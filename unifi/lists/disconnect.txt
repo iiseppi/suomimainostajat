@@ -51,6 +51,7 @@ ads.allvatar.com
 ads.betfair.com.au
 ads.canoe.ca
 ads.faxo.com
+ads.motormedia.nl
 ads.movieflix.com
 ads.pennet.com
 ads.resoom.de
@@ -85,6 +86,7 @@ affiliate.mogs.com
 affiliates.jlist.com
 affiliatetrading.net
 ajouter.net
+allstarmediagroup.com
 app-promo.com
 appier.com
 appolicious.com
@@ -142,6 +144,7 @@ clicmanager.fr
 cmpstar.com
 comboapp.com
 comclick.com
+contaxe.de
 cpmaffiliation.com
 cpxadroit.com
 crakmedia.com
@@ -153,6 +156,7 @@ crispmedia.com
 crispwireless.com
 cubics.com
 deanmediagroup.com
+debtbusterloans.com
 direct-xxx-access.com
 directtrack.com
 displayadsmedia.com
@@ -160,6 +164,7 @@ displaypagerank.com
 domainsteam.de
 e-bannerx.com
 earnify.com
+eclickz.com
 edgeio.com
 effectivemeasure.com
 ehealthcaresolutions.com
@@ -172,7 +177,6 @@ esellerate.net
 etracker.de
 eu1.madsone.com
 european-toplist.de
-euroranking.de
 evidencecleanergold.com
 extractorandburner.com
 eyereturn.com
@@ -222,7 +226,6 @@ interstat.hu
 inuvi.com
 ipro.com
 itfarm.com
-its-that-easy.com
 ivypixel.com
 jatxt.com
 julysystems.com
@@ -261,6 +264,7 @@ misstrends.com
 mmedia.com
 mobday.com
 mobgold.com
+mobhero.com
 mobilda.com
 mobile-ent.biz
 mobileactive.com
@@ -317,6 +321,7 @@ quigo.com
 rank-master.com
 ranking-liste.de
 re-directme.com
+readserver.net
 realcastmedia.com
 realteencash.com
 reduxmediagroup.com
@@ -373,6 +378,7 @@ topsearcher.com
 topsite.lv
 totemcash.com
 touchads.com
+trademob.com
 trafficsecrets.com
 trekblue.com
 tremorvideo.com
@@ -394,7 +400,6 @@ warp.ly
 wda.com
 webmasterplan.com
 webmasterplan.de
-webstats4u.com
 whispa.com
 widgetbucks.com
 wmirk.ru

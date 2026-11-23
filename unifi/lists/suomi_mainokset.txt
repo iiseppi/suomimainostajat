@@ -15,6 +15,7 @@ monster2.almamedia.fi
 nayta.monster.fi
 nuuh.alma.iltalehti.fi
 rekryboksi-v4.appspot.com
+revimages.motouutiset.fi
 smetrics.crocs.fi
 snoobi.fi
 stats.fonecta.fi

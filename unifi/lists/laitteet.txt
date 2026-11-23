@@ -539,6 +539,7 @@ bo-rdx2-lgtvsdp-com.aws-prd.net
 books-analytics-events.apple.com
 bossadmin.pandora.xiaomi.com
 box.pandora.xiaomi.com
+bpu.samsungelectronics.com
 br-ad-lgsmartad-com.aws-prd.net
 br-info-lgsmartad-com.aws-prd.net
 br-miuilog.sms.intl.xiaomi.com
