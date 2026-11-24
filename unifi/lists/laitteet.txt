@@ -33,6 +33,8 @@ aax-dtb-web-bids-geo.amazon-adsystem.com
 aax-dtb-web-geo-aax.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.com
+aax-dtb-web.amazon-adsystem.amazon.com
+aax-dtb-web.amazon-adsystem.com
 aax-eu-rtb-adx.amazon-adsystem.com
 aax-eu-rtb.amazon-adsystem.com
 aax-eu.amazon-adsystem.com
@@ -539,7 +541,6 @@ bo-rdx2-lgtvsdp-com.aws-prd.net
 books-analytics-events.apple.com
 bossadmin.pandora.xiaomi.com
 box.pandora.xiaomi.com
-bpu.samsungelectronics.com
 br-ad-lgsmartad-com.aws-prd.net
 br-info-lgsmartad-com.aws-prd.net
 br-miuilog.sms.intl.xiaomi.com
@@ -2097,7 +2098,6 @@ pa-ad-lgsmartad-com.aws-prd.net
 pa-info-lgsmartad-com.aws-prd.net
 pa-rdx2-lgtvsdp-com.aws-prd.net
 paa-reporting-advertising.amazon
-package.box.xiaomi.com
 package.cdn.pandora.xiaomi.com
 pandora.mi.com
 pangolin.snssdk.com

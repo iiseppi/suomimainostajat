@@ -22,6 +22,7 @@ ad.f1cd.ru
 ad.mgd.de
 ad.onad.eu
 ad.playground.ru
+ad.top50.to
 ad.twitchguru.com
 ad2.linxcz.cz
 adbanner.ro
@@ -48,6 +49,7 @@ adprofile.net
 adprojekt.pl
 ads-click.com
 ads.allvatar.com
+ads.beenetworks.net
 ads.betfair.com.au
 ads.canoe.ca
 ads.faxo.com
@@ -144,7 +146,6 @@ clicmanager.fr
 cmpstar.com
 comboapp.com
 comclick.com
-contaxe.de
 cpmaffiliation.com
 cpxadroit.com
 crakmedia.com
@@ -154,9 +155,9 @@ creafi.com
 crispads.com
 crispmedia.com
 crispwireless.com
+ctnetwork.hu
 cubics.com
 deanmediagroup.com
-debtbusterloans.com
 direct-xxx-access.com
 directtrack.com
 displayadsmedia.com
@@ -177,6 +178,7 @@ esellerate.net
 etracker.de
 eu1.madsone.com
 european-toplist.de
+euroranking.de
 evidencecleanergold.com
 extractorandburner.com
 eyereturn.com
@@ -226,6 +228,7 @@ interstat.hu
 inuvi.com
 ipro.com
 itfarm.com
+its-that-easy.com
 ivypixel.com
 jatxt.com
 julysystems.com
@@ -307,6 +310,7 @@ phonearena.com
 picadmedia.com
 placeplay.com
 planetactive.com
+plethoramobile.com
 pontiflex.com
 potenza.cz
 primaryads.com
@@ -345,6 +349,7 @@ sessionm.com
 sexadvertentiesite.nl
 sexystat.com
 sezwho.com
+siccash.com
 signalhq.com
 simpletexting.com
 sitemerkezi.net
@@ -384,7 +389,6 @@ trekblue.com
 tremorvideo.com
 trix.net
 trumpia.com
-tsms-ad.tsms.com
 tvmtracker.com
 txtimpact.com
 ukbanners.com
@@ -400,6 +404,7 @@ warp.ly
 wda.com
 webmasterplan.com
 webmasterplan.de
+webstats4u.com
 whispa.com
 widgetbucks.com
 wmirk.ru
