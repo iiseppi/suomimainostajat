@@ -22,7 +22,6 @@ ad.f1cd.ru
 ad.mgd.de
 ad.onad.eu
 ad.playground.ru
-ad.top50.to
 ad.twitchguru.com
 ad2.linxcz.cz
 adbanner.ro
@@ -49,7 +48,6 @@ adprofile.net
 adprojekt.pl
 ads-click.com
 ads.allvatar.com
-ads.beenetworks.net
 ads.betfair.com.au
 ads.canoe.ca
 ads.faxo.com
@@ -310,7 +308,6 @@ phonearena.com
 picadmedia.com
 placeplay.com
 planetactive.com
-plethoramobile.com
 pontiflex.com
 potenza.cz
 primaryads.com

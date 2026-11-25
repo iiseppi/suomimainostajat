@@ -335,6 +335,7 @@ self.events.data.microsoft.com
 server6.pipe.aria.microsoft.com
 server7.pipe.aria.microsoft.com
 service.weather.microsoft.com
+settings-sandbox.data.microsoft.com
 settings-ssl.xboxlive.com
 settings-win-ppe.data.microsoft.com
 settings-win.data.microsoft.com

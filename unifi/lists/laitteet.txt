@@ -414,6 +414,7 @@ appstore-trace-h5sdk.vivo.com.cn
 appstore.cdn.pandora.xiaomi.com
 appstore.pandora.xiaomi.com
 appstore.ptmi.gitv.tv
+apu.samsungelectronics.com
 ar-ad-lgsmartad-com.aws-prd.net
 ar-info-lgsmartad-com.aws-prd.net
 ar-rdx2-lgtvsdp-com.aws-prd.net
@@ -541,6 +542,7 @@ bo-rdx2-lgtvsdp-com.aws-prd.net
 books-analytics-events.apple.com
 bossadmin.pandora.xiaomi.com
 box.pandora.xiaomi.com
+bpu.samsungelectronics.com
 br-ad-lgsmartad-com.aws-prd.net
 br-info-lgsmartad-com.aws-prd.net
 br-miuilog.sms.intl.xiaomi.com
@@ -1472,6 +1474,7 @@ kg-legacy-analytics.servicebus.windows.net
 kh-ad-lgsmartad-com.aws-prd.net
 kh-info-lgsmartad-com.aws-prd.net
 kh-rdx2-lgtvsdp-com.aws-prd.net
+kpu.samsungelectronics.com
 kr-ad-lgsmartad-com.aws-prd.net
 kr-info-lgsmartad-com.aws-prd.net
 kr-rdx2-lgtvsdp-com.aws-prd.net
@@ -2098,6 +2101,7 @@ pa-ad-lgsmartad-com.aws-prd.net
 pa-info-lgsmartad-com.aws-prd.net
 pa-rdx2-lgtvsdp-com.aws-prd.net
 paa-reporting-advertising.amazon
+package.box.xiaomi.com
 package.cdn.pandora.xiaomi.com
 pandora.mi.com
 pangolin.snssdk.com
@@ -2989,9 +2993,11 @@ xp-cdn.apple.com
 xp.apple.com
 xp.apple.com.edgekey.net
 xp.v.aaplimg.com
+xpu.samsungelectronics.com
 ye-ad-lgsmartad-com.aws-prd.net
 ye-info-lgsmartad-com.aws-prd.net
 ye-rdx2-lgtvsdp-com.aws-prd.net
+ypu.samsungelectronics.com
 za-ad-lgsmartad-com.aws-prd.net
 za-info-lgsmartad-com.aws-prd.net
 za-p.vivoglobal.com
