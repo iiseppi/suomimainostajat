@@ -33,8 +33,6 @@ aax-dtb-web-bids-geo.amazon-adsystem.com
 aax-dtb-web-geo-aax.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.amazon.com
 aax-dtb-web-geo.amazon-adsystem.com
-aax-dtb-web.amazon-adsystem.amazon.com
-aax-dtb-web.amazon-adsystem.com
 aax-eu-rtb-adx.amazon-adsystem.com
 aax-eu-rtb.amazon-adsystem.com
 aax-eu.amazon-adsystem.com
@@ -414,7 +412,6 @@ appstore-trace-h5sdk.vivo.com.cn
 appstore.cdn.pandora.xiaomi.com
 appstore.pandora.xiaomi.com
 appstore.ptmi.gitv.tv
-apu.samsungelectronics.com
 ar-ad-lgsmartad-com.aws-prd.net
 ar-info-lgsmartad-com.aws-prd.net
 ar-rdx2-lgtvsdp-com.aws-prd.net
@@ -542,7 +539,6 @@ bo-rdx2-lgtvsdp-com.aws-prd.net
 books-analytics-events.apple.com
 bossadmin.pandora.xiaomi.com
 box.pandora.xiaomi.com
-bpu.samsungelectronics.com
 br-ad-lgsmartad-com.aws-prd.net
 br-info-lgsmartad-com.aws-prd.net
 br-miuilog.sms.intl.xiaomi.com
@@ -2997,7 +2993,6 @@ xpu.samsungelectronics.com
 ye-ad-lgsmartad-com.aws-prd.net
 ye-info-lgsmartad-com.aws-prd.net
 ye-rdx2-lgtvsdp-com.aws-prd.net
-ypu.samsungelectronics.com
 za-ad-lgsmartad-com.aws-prd.net
 za-info-lgsmartad-com.aws-prd.net
 za-p.vivoglobal.com

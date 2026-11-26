@@ -83,6 +83,7 @@ blobs.officehome.msocdn.com
 browser.events.data.microsoft.com
 browser.events.data.msn.com
 browser.pipe.aria.microsoft.com
+c-0001.dc-msedge.net
 c.bing.com
 c.msn.com
 c1.microsoft.com
