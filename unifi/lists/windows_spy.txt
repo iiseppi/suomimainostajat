@@ -72,7 +72,6 @@ auth.gfx.ms
 autologon.microsoftazuread-sso.com
 automatedirstrprdeus.blob.core.windows.net
 azpglspamprwduateus2.blob.core.windows.net
-azsc-euw.config.skype.com
 b-ring.msedge.net
 b.config.skype.com
 bingads.microsoft.com

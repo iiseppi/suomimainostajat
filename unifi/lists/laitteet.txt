@@ -585,6 +585,8 @@ bz-ad-lgsmartad-com.aws-prd.net
 bz-info-lgsmartad-com.aws-prd.net
 bz-rdx2-lgtvsdp-com.aws-prd.net
 c-bingapis-com.dual-a-0034.a-msedge.net
+c-ring-fallback.msedge.net
+c-ring.msedge.net
 c.amazon-adsystem.com
 c.ar.msn.com
 c.at.msn.com
@@ -971,6 +973,7 @@ do-ad-lgsmartad-com.aws-prd.net
 do-info-lgsmartad-com.aws-prd.net
 do-rdx2-lgtvsdp-com.aws-prd.net
 download-samsung.dtignite.com
+dpu.samsungelectronics.com
 dqa-auth.di.atlas.samsung.com
 dra.amazon-adsystem.com
 dragate-br.dc.oppomobile.com
@@ -1470,7 +1473,6 @@ kg-legacy-analytics.servicebus.windows.net
 kh-ad-lgsmartad-com.aws-prd.net
 kh-info-lgsmartad-com.aws-prd.net
 kh-rdx2-lgtvsdp-com.aws-prd.net
-kpu.samsungelectronics.com
 kr-ad-lgsmartad-com.aws-prd.net
 kr-info-lgsmartad-com.aws-prd.net
 kr-rdx2-lgtvsdp-com.aws-prd.net
@@ -2438,6 +2440,7 @@ samsungads.adsmeasurement.com
 samsungads.com
 samsungafrica.demdex.net
 samsungafrica.tt.omtrdc.net
+samsungallstore.com
 samsungau.api.useinsider.com
 samsungau.demdex.net
 samsungbenelux.tt.omtrdc.net
@@ -2989,7 +2992,6 @@ xp-cdn.apple.com
 xp.apple.com
 xp.apple.com.edgekey.net
 xp.v.aaplimg.com
-xpu.samsungelectronics.com
 ye-ad-lgsmartad-com.aws-prd.net
 ye-info-lgsmartad-com.aws-prd.net
 ye-rdx2-lgtvsdp-com.aws-prd.net
