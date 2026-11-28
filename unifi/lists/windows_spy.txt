@@ -72,6 +72,7 @@ auth.gfx.ms
 autologon.microsoftazuread-sso.com
 automatedirstrprdeus.blob.core.windows.net
 azpglspamprwduateus2.blob.core.windows.net
+azsc-euw.config.skype.com
 b-ring.msedge.net
 b.config.skype.com
 bingads.microsoft.com
@@ -82,7 +83,6 @@ blobs.officehome.msocdn.com
 browser.events.data.microsoft.com
 browser.events.data.msn.com
 browser.pipe.aria.microsoft.com
-c-0001.dc-msedge.net
 c.bing.com
 c.msn.com
 c1.microsoft.com
@@ -107,7 +107,6 @@ cs.dds.microsoft.com
 ctldl.windowsupdate.com
 da.xboxservices.com
 db3pap004.storage.live.com
-db5.settings.data.microsoft.com.akadns.net
 db5.wns.windows.com
 db5p.wns.windows.com
 decsitefinitycdn.blob.core.windows.net

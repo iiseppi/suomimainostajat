@@ -1,6 +1,5 @@
 aametrics.aktia.fi
 ad.ilcdn.fi
-ads.sanomalehtimedia.fi
 ams3-ib.adnxs.com
 api.nettix.fi
 c1.hinta.fi
@@ -9,7 +8,6 @@ da.yle.fi
 dax.yle.fi
 eas.almamedia.fi
 embed.tapkal.fi
-euroads.fi
 mainos.otavamedia.fi
 metrics.gigantti.fi
 monster.almamedia.fi

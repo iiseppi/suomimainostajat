@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-27T11:36:36Z",
+  "updated": "2026-11-28T11:06:17Z",
   "lists": {
     "windows_spy.txt": {
-      "entries": 435,
+      "entries": 434,
       "source_entries": 1283,
       "removed": {
-        "no_answer": 32,
+        "no_answer": 33,
         "nodata": 30,
         "nxdomain": 683,
         "servfail": 101,
@@ -20,55 +20,54 @@
       }
     },
     "mainokset.txt": {
-      "entries": 27845,
-      "source_entries": 45633,
+      "entries": 26972,
+      "source_entries": 45634,
       "removed": {
-        "no_answer": 2579,
-        "nodata": 1555,
-        "nxdomain": 12303,
-        "servfail": 1257,
-        "sinkhole": 94
+        "no_answer": 3727,
+        "nodata": 1556,
+        "nxdomain": 12305,
+        "servfail": 978,
+        "sinkhole": 96
       }
     },
     "disconnect.txt": {
-      "entries": 429,
+      "entries": 422,
       "source_entries": 914,
       "removed": {
-        "no_answer": 19,
+        "no_answer": 28,
         "nodata": 46,
-        "nxdomain": 351,
-        "servfail": 68,
+        "nxdomain": 352,
+        "servfail": 65,
         "sinkhole": 1
       }
     },
     "suomi_mainokset.txt": {
-      "entries": 24,
+      "entries": 22,
       "source_entries": 51,
       "removed": {
-        "no_answer": 7,
+        "no_answer": 9,
         "nodata": 2,
         "nxdomain": 18
       }
     },
     "laitteet.txt": {
-      "entries": 3030,
-      "source_entries": 3504,
+      "entries": 3026,
+      "source_entries": 3510,
       "removed": {
-        "no_answer": 215,
-        "nodata": 130,
+        "no_answer": 218,
+        "nodata": 145,
         "nxdomain": 89,
-        "servfail": 8,
         "sinkhole": 32
       }
     },
     "host.txt": {
-      "entries": 20606,
-      "source_entries": 47095,
+      "entries": 20898,
+      "source_entries": 47101,
       "removed": {
-        "no_answer": 1806,
-        "nodata": 1152,
-        "nxdomain": 20830,
-        "servfail": 2675,
+        "no_answer": 1439,
+        "nodata": 1654,
+        "nxdomain": 21241,
+        "servfail": 1843,
         "sinkhole": 26
       }
     },
